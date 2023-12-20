@@ -12,7 +12,7 @@ class CheckUserActive
     public function handle($request, Closure $next)
     {
         if (!Session::get('user') == '') {
-            return redirect('/admin/dashboard');
+            return redirect('/admin/painel');
         }
 
         return $next($request);
