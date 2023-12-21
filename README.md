@@ -1,8 +1,6 @@
 ## *:information_source: Inventoryweb*
 Este aplicativo pode ser usado para controlar o estoque de produtos que você possui, tornando as transações de entrada e saída de produtos claras e facilitando o controle desses produtos.
 
-<br><br>
-
 Para a aparência, já integrei o modelo de administração 'bootstrap v5' chamado 'sash admin'.
 
 ## *:sparkles: Recursos*
