@@ -18,7 +18,7 @@ class AksesTableSeeder extends Seeder
     {
         DB::table('tbl_akses')->insert(
             [
-                // Painel akses role Super Admin
+                // Dashboard akses role Super Admin
                 [
                     'menu_id' => '1667444041',
                     'role_id' => 1,
@@ -48,7 +48,7 @@ class AksesTableSeeder extends Seeder
                     'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
                 ],
 
-                // Painel akses role Admin
+                // Dashboard akses role Admin
                 [
                     'menu_id' => '1667444041',
                     'role_id' => 2,
@@ -78,7 +78,7 @@ class AksesTableSeeder extends Seeder
                     'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
                 ],
 
-                // Painel akses role Operator
+                // Dashboard akses role Operator
                 [
                     'menu_id' => '1667444041',
                     'role_id' => 3,
