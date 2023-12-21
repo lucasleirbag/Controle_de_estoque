@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
-Project        :   sash – Bootstrap 5  Admin & Painel Template
+Project        :   sash – Bootstrap 5  Admin & Dashboard Template
 Copyright      :   Spruko Technologies Private Limited 
 Author         :   Spruko
 Author URL     :   https://themeforest.net/user/spruko
@@ -42892,7 +42892,7 @@ ul.inbox-pagination li {
 
 .main-content-label,
 .card-table-two .card-title,
-.card-painel-eight .card-title {
+.card-dashboard-eight .card-title {
     color: #1d212f;
     font-weight: 800;
     text-transform: uppercase;
@@ -51694,7 +51694,7 @@ svg {
     content: "\e140";
 }
 
-.glyphicon-painel:before {
+.glyphicon-dashboard:before {
     content: "\e141";
 }
 
@@ -63201,8 +63201,8 @@ body.rtl {
 }
 
 .card-table-two .main-chat-contacts-wrapper .card-title,
-.main-chat-contacts-wrapper .card-painel-eight .card-title,
-.card-painel-eight .main-chat-contacts-wrapper .card-title {
+.main-chat-contacts-wrapper .card-dashboard-eight .card-title,
+.card-dashboard-eight .main-chat-contacts-wrapper .card-title {
     margin-bottom: 15px;
     line-height: 1;
 }
