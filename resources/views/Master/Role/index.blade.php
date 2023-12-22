@@ -21,7 +21,7 @@
             <div class="card-header justify-content-between">
                 <h3 class="card-title">Lista de Funções</h3>
                 <div>
-                    <a class="modal-effect btn btn-primary-light" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">Salvar dados <i class="fe fe-plus"></i></a>
+                    <a class="modal-effect btn btn-primary-light" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">Adicionar <i class="fe fe-plus"></i></a>
                 </div>
             </div>
             <div class="card-body">

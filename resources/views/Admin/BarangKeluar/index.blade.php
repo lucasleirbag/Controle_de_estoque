@@ -23,7 +23,7 @@
                     @if ($hakTambah > 0)
                         <div>
                             <a class="modal-effect btn btn-primary-light" onclick="generateID()"
-                                data-bs-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">Salvar Dados
+                                data-bs-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">Adicionar
                                 <i class="fe fe-plus"></i></a>
                         </div>
                     @endif
