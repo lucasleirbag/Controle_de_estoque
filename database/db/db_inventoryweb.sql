@@ -575,10 +575,10 @@ CREATE TABLE `tbl_menu` (
 
 insert  into `tbl_menu`(`menu_id`,`menu_judul`,`menu_slug`,`menu_icon`,`menu_redirect`,`menu_sort`,`menu_type`,`created_at`,`updated_at`) values 
 (1667444041,'Painel','painel','home','/painel','1','1','2022-11-15 10:51:04','2022-11-15 10:51:04'),
-(1668509889,'Master Barang','master-barang','package','-','2','2','2022-11-15 10:58:09','2022-11-15 11:03:15'),
-(1668510437,'Transaksi','transaksi','repeat','-','4','2','2022-11-15 11:07:17','2022-11-25 15:37:36'),
-(1668510568,'Laporan','laporan','printer','-','5','2','2022-11-15 11:09:28','2022-11-25 15:37:28'),
-(1669390641,'Customer','customer','user','/customer','3','1','2022-11-25 15:37:21','2022-11-25 15:37:36');
+(1668509889,'Estoque','estoque','package','-','2','2','2022-11-15 10:58:09','2022-11-15 11:03:15'),
+(1668510437,'Transferência','transferência','repeat','-','4','2','2022-11-15 11:07:17','2022-11-25 15:37:36'),
+(1668510568,'Relatório','relatório','printer','-','5','2','2022-11-15 11:09:28','2022-11-25 15:37:28'),
+(1669390641,'Cliente','cliente','user','/customer','3','1','2022-11-25 15:37:21','2022-11-25 15:37:36');
 
 /*Table structure for table `tbl_merk` */
 
@@ -663,15 +663,15 @@ CREATE TABLE `tbl_submenu` (
 /*Data for the table `tbl_submenu` */
 
 insert  into `tbl_submenu`(`submenu_id`,`menu_id`,`submenu_judul`,`submenu_slug`,`submenu_redirect`,`submenu_sort`,`created_at`,`updated_at`) values 
-(9,'1668510437','Barang Masuk','barang-masuk','/barang-masuk','1','2022-11-15 11:08:19','2022-11-15 11:08:19'),
-(10,'1668510437','Barang Keluar','barang-keluar','/barang-keluar','2','2022-11-15 11:08:19','2022-11-15 11:08:19'),
-(17,'1668509889','Jenis','jenis','/jenisbarang','1','2022-11-24 12:06:48','2022-11-24 12:06:48'),
-(18,'1668509889','Satuan','satuan','/satuan','2','2022-11-24 12:06:48','2022-11-24 12:06:48'),
-(19,'1668509889','Merk','merk','/merk','3','2022-11-24 12:06:48','2022-11-24 12:06:48'),
-(20,'1668509889','Barang','barang','/barang','4','2022-11-24 12:06:48','2022-11-24 12:06:48'),
-(21,'1668510568','Lap Barang Masuk','lap-barang-masuk','/lap-barang-masuk','1','2022-11-30 12:56:24','2022-11-30 12:56:24'),
-(22,'1668510568','Lap Barang Keluar','lap-barang-keluar','/lap-barang-keluar','2','2022-11-30 12:56:24','2022-11-30 12:56:24'),
-(23,'1668510568','Lap Stok Barang','lap-stok-barang','/lap-stok-barang','3','2022-11-30 12:56:24','2022-11-30 12:56:24');
+(9,'1668510437','Entrada de Produtos','entrada-produtos','/barang-masuk','1','2022-11-15 11:08:19','2022-11-15 11:08:19'),
+(10,'1668510437','Saída de Produtos','saída-produtos','/barang-keluar','2','2022-11-15 11:08:19','2022-11-15 11:08:19'),
+(17,'1668509889','Local','local','/jenisbarang','1','2022-11-24 12:06:48','2022-11-24 12:06:48'),
+(18,'1668509889','Unidade','unidade','/satuan','2','2022-11-24 12:06:48','2022-11-24 12:06:48'),
+(19,'1668509889','Marca','marca','/merk','3','2022-11-24 12:06:48','2022-11-24 12:06:48'),
+(20,'1668509889','Produtos','produtos','/barang','4','2022-11-24 12:06:48','2022-11-24 12:06:48'),
+(21,'1668510568','Relatório de Entrada','relatório-entrada','/lap-barang-masuk','1','2022-11-30 12:56:24','2022-11-30 12:56:24'),
+(22,'1668510568','Relatório de Saída','relatório-saída','/lap-barang-keluar','2','2022-11-30 12:56:24','2022-11-30 12:56:24'),
+(23,'1668510568','Relatório de estoque','relatório-estoque','/lap-stok-barang','3','2022-11-30 12:56:24','2022-11-30 12:56:24');
 
 /*Table structure for table `tbl_user` */
 

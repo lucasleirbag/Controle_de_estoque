@@ -3,11 +3,11 @@
 @section('content')
     <!-- PAGE-HEADER -->
     <div class="page-header">
-        <h1 class="page-title">Barang Keluar</h1>
+        <h1 class="page-title">Saída de Produtos</h1>
         <div>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item text-gray">Transaksi</li>
-                <li class="breadcrumb-item active" aria-current="page">Barang Keluar</li>
+                <li class="breadcrumb-item text-gray">Movimentação</li>
+                <li class="breadcrumb-item active" aria-current="page">Saída de Produtos</li>
             </ol>
         </div>
     </div>
@@ -19,11 +19,11 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header justify-content-between">
-                    <h3 class="card-title">Data</h3>
+                    <h3 class="card-title">Lista de Saída</h3>
                     @if ($hakTambah > 0)
                         <div>
                             <a class="modal-effect btn btn-primary-light" onclick="generateID()"
-                                data-bs-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">Tambah Data
+                                data-bs-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">Salvar Dados
                                 <i class="fe fe-plus"></i></a>
                         </div>
                     @endif
@@ -34,13 +34,13 @@
                             class="table table-bordered text-nowrap border-bottom dataTable no-footer dtr-inline collapsed">
                             <thead>
                                 <th class="border-bottom-0" width="1%">No</th>
-                                <th class="border-bottom-0">Tanggal Keluar</th>
-                                <th class="border-bottom-0">Kode Barang Keluar</th>
-                                <th class="border-bottom-0">Kode Barang</th>
-                                <th class="border-bottom-0">Barang</th>
-                                <th class="border-bottom-0">Jumlah Keluar</th>
-                                <th class="border-bottom-0">Tujuan</th>
-                                <th class="border-bottom-0" width="1%">Action</th>
+                                <th class="border-bottom-0">Data de Saída</th>
+                                <th class="border-bottom-0">Código Saída do Produto</th>
+                                <th class="border-bottom-0">Código do Produto</th>
+                                <th class="border-bottom-0">Produto</th>
+                                <th class="border-bottom-0">Quantidade de Saída</th>
+                                <th class="border-bottom-0">Destino</th>
+                                <th class="border-bottom-0" width="1%">Ação</th>
                             </thead>
                             <tbody></tbody>
                         </table>
