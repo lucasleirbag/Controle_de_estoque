@@ -81,7 +81,7 @@ class LapStokBarangController extends Controller
 
                     return $result;
                 })
-                ->addColumn('estoque total', function ($row) use ($request) {
+                ->addColumn('totalstok', function ($row) use ($request) {
                     if ($request->tglawal == '') {
                         $jmlmasuk = BarangmasukModel::leftJoin('tbl_barang', 'tbl_barang.barang_kode', '=', 'tbl_barangmasuk.barang_kode')->leftJoin('tbl_customer', 'tbl_customer.customer_id', '=', 'tbl_barangmasuk.customer_id')->where('tbl_barangmasuk.barang_kode', '=', $row->barang_kode)->sum('tbl_barangmasuk.bm_jumlah');
                     } else {
