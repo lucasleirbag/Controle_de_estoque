@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="form-group">
-                            <label for="kode" class="form-label">Código do produto <span class="text-danger">*</span></label>
+                            <label for="kode" class="form-label">Número do Pedido <span class="text-danger">*</span></label>
                             <input type="text" name="kode" class="form-control">
                         </div>
                         <div class="form-group">

@@ -48,7 +48,8 @@
                             <th class="border-bottom-0" width="1%">No</th>
                             <th class="border-bottom-0">Data de Saída</th>
                             <th class="border-bottom-0">Código Saída de Produtos</th>
-                            <th class="border-bottom-0">Código do Produto</th>
+                            <th class="border-bottom-0">Número do Pedido</th>
+                            <th class="border-bottom-0">Local</th>
                             <th class="border-bottom-0">Quantidade de Saída</th>
                             <th class="border-bottom-0">Destino</th>
                         </thead>

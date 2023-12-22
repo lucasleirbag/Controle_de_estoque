@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Código do Produto <span class="text-danger me-1">*</span>
+                            <label>Número do Pedido <span class="text-danger me-1">*</span>
                                 <input type="hidden" id="statusU" value="true">
                                 <div class="spinner-border spinner-border-sm d-none" id="loaderkdU" role="status">
                                     <span class="visually-hidden">Loading...</span>

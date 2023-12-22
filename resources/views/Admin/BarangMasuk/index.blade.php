@@ -34,7 +34,7 @@
                             <th class="border-bottom-0" width="1%">ID</th>
                             <th class="border-bottom-0">Data</th>
                             <th class="border-bottom-0">Código de Entrada</th>
-                            <th class="border-bottom-0">Código do Produto</th>
+                            <th class="border-bottom-0">Número do Pedido</th>
                             <th class="border-bottom-0">Cliente</th>
                             <th class="border-bottom-0">Produto</th>
                             <th class="border-bottom-0">Quantidade de </th>

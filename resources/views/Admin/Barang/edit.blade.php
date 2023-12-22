@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="form-group">
-                            <label for="kodeU" class="form-label">Código do produto <span class="text-danger">*</span></label>
+                            <label for="kodeU" class="form-label">Número do Pedido <span class="text-danger">*</span></label>
                             <input type="text" name="kodeU" class="form-control">
                         </div>
                         <div class="form-group">
@@ -18,7 +18,7 @@
                             <input type="text" name="namaU" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="jenisbarangU" class="form-label">Local</label>
+                            <label for="jenisbarangU" class="form-label">Tipo de produto</label>
                             <select name="jenisbarangU" class="form-control">
                                 <option value="">-- Selecionar --</option>
                                 @foreach ($jenisbarang as $jb)
