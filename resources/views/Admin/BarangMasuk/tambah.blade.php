@@ -3,23 +3,23 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Tambah Barang Masuk</h6><button onclick="reset()" aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Adicionar Entrada de Produto</h6><button onclick="reset()" aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="bmkode" class="form-label">Kode Barang Masuk <span class="text-danger">*</span></label>
+                            <label for="bmkode" class="form-label">Código de Entrada do Produto <span class="text-danger">*</span></label>
                             <input type="text" name="bmkode" readonly class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="tglmasuk" class="form-label">Tanggal Masuk <span class="text-danger">*</span></label>
+                            <label for="tglmasuk" class="form-label">Data de Entrada <span class="text-danger">*</span></label>
                             <input type="text" name="tglmasuk" class="form-control datepicker-date" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="customer" class="form-label">Pilih Customer <span class="text-danger">*</span></label>
+                            <label for="customer" class="form-label">Escolher Cliente <span class="text-danger">*</span></label>
                             <select name="customer" id="customer" class="form-control">
-                                <option value="">-- Pilih Customer --</option>
+                                <option value="">-- Escolher Cliente --</option>
                                 @foreach ($customer as $c)
                                 <option value="{{ $c->customer_id }}">{{ $c->customer_nama }}</option>
                                 @endforeach
@@ -28,7 +28,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Kode Barang <span class="text-danger me-1">*</span>
+                            <label>Código do Produto <span class="text-danger me-1">*</span>
                                 <input type="hidden" id="status" value="false">
                                 <div class="spinner-border spinner-border-sm d-none" id="loaderkd" role="status">
                                     <span class="visually-hidden">Loading...</span>
@@ -41,25 +41,25 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Nama Barang</label>
+                            <label>Nome do Produto</label>
                             <input type="text" class="form-control" id="nmbarang" readonly>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Satuan</label>
+                                    <label>Unidade</label>
                                     <input type="text" class="form-control" id="satuan" readonly>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Jenis</label>
+                                    <label>Local</label>
                                     <input type="text" class="form-control" id="jenis" readonly>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="jml" class="form-label">Jumlah Masuk <span class="text-danger">*</span></label>
+                            <label for="jml" class="form-label">Quantidade de Entrada <span class="text-danger">*</span></label>
                             <input type="text" name="jml" value="0" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" placeholder="">
                         </div>
                     </div>

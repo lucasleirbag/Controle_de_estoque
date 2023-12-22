@@ -3,24 +3,24 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Ubah Barang Masuk</h6><button aria-label="Close" onclick="resetU()" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Alterar Entrada de Produto</h6><button aria-label="Close" onclick="resetU()" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
                         <input type="hidden" name="idbmU">
                         <div class="form-group">
-                            <label for="bmkodeU" class="form-label">Kode Barang Masuk <span class="text-danger">*</span></label>
+                            <label for="bmkodeU" class="form-label">Código Entrada de Produto <span class="text-danger">*</span></label>
                             <input type="text" name="bmkodeU" readonly class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="tglmasukU" class="form-label">Tanggal Masuk <span class="text-danger">*</span></label>
+                            <label for="tglmasukU" class="form-label">Data de Entrada <span class="text-danger">*</span></label>
                             <input type="text" name="tglmasukU" class="form-control datepicker-date" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="customerU" class="form-label">Pilih Customer <span class="text-danger">*</span></label>
+                            <label for="customerU" class="form-label">Escolher Cliente <span class="text-danger">*</span></label>
                             <select name="customerU" id="customerU" class="form-control">
-                                <option value="">-- Pilih Customer --</option>
+                                <option value="">-- Escolher Cliente --</option>
                                 @foreach ($customer as $c)
                                 <option value="{{ $c->customer_id }}">{{ $c->customer_nama }}</option>
                                 @endforeach
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Kode Barang <span class="text-danger me-1">*</span>
+                            <label>Código do Produto <span class="text-danger me-1">*</span>
                                 <input type="hidden" id="statusU" value="true">
                                 <div class="spinner-border spinner-border-sm d-none" id="loaderkdU" role="status">
                                     <span class="visually-hidden">Loading...</span>
@@ -42,25 +42,25 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Nama Barang</label>
+                            <label>Nome do Produto</label>
                             <input type="text" class="form-control" id="nmbarangU" readonly>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Satuan</label>
+                                    <label>Unidade</label>
                                     <input type="text" class="form-control" id="satuanU" readonly>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Jenis</label>
+                                    <label>Local</label>
                                     <input type="text" class="form-control" id="jenisU" readonly>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="jmlU" class="form-label">Jumlah Masuk <span class="text-danger">*</span></label>
+                            <label for="jmlU" class="form-label">Quantidade de Entrada <span class="text-danger">*</span></label>
                             <input type="text" name="jmlU" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" placeholder="">
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     Loading...
                 </button>
                 <a href="javascript:void(0)" onclick="checkFormU()" id="btnSalvarU" class="btn btn-success">Salvar
-                    Perubahan <i class="fe fe-check"></i></a>
+                    <i class="fe fe-check"></i></a>
                 <a href="javascript:void(0)" class="btn btn-light" onclick="resetU()" data-bs-dismiss="modal">Cancelar <i class="fe fe-x"></i></a>
             </div>
         </div>

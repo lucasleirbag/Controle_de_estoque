@@ -3,11 +3,11 @@
 @section('content')
 <!-- PAGE-HEADER -->
 <div class="page-header">
-    <h1 class="page-title">Pengaturan Website</h1>
+    <h1 class="page-title">Configurações do Site</h1>
     <div>
         <ol class="breadcrumb">
             <li class="breadcrumb-item text-gray">Admin</li>
-            <li class="breadcrumb-item active" aria-current="page">Pengaturan Website</li>
+            <li class="breadcrumb-item active" aria-current="page">Configurações do Site</li>
         </ol>
     </div>
 </div>
@@ -17,7 +17,7 @@
     <div class="col-12 col-md-12 col-lg-6 mb-4">
         <div class="card border-0 shadow">
             <div class="card-header">
-                <h6 class="fw-bold mt-2">Profil Website</h6>
+                <h6 class="fw-bold mt-2">Perfil do Site</h6>
             </div>
             <div class="card-body">
                 @foreach($data as $d)
@@ -33,14 +33,14 @@
                 @endforeach
 
                 <div class="d-flex justify-content-between mx-4">
-                    <h6 class="mr-4">Judul Website</h6>
+                    <h6 class="mr-4">Título do Site</h6>
                     <h6 class="font-weight-bold">{{$d->web_nama}}</h6>
                 </div>
 
                 <hr class="">
 
                 <div class="d-flex justify-content-between mx-4">
-                    <h6 class="mr-4">Deskripsi</h6>
+                    <h6 class="mr-4">Descrição</h6>
                     <h6 class="font-weight-bold">{{$d->web_deskripsi == "" ? "-" : $d->web_deskripsi}}</h6>
                 </div>
             </div>
@@ -51,7 +51,7 @@
         <form action="{{ route('web.update', $d->web_id) }}" method="POST" name="myForm" enctype="multipart/form-data" onsubmit="return validateForm()">
             <div class="card shadow border-0">
                 <div class="card-header">
-                    <h6 class="mt-2 fw-bold">Ubah Pengaturan</h6>
+                    <h6 class="mt-2 fw-bold">Alterar Configurações</h6>
                 </div>
                 <div class="card-body">
                     @csrf
@@ -61,7 +61,7 @@
                             <i class="fa fa-exclamation-circle"></i>
                         </div>
                         <div class="alert-icon-content ms-1 mt-1">
-                            <h6 class="alert-heading">Extensi Gambar</h6>
+                            <h6 class="alert-heading">Formato da Imagem</h6>
                             .jpg .jpeg .png
                         </div>
                     </div>
@@ -72,12 +72,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Judul Website</label>
+                        <label>Título do Site</label>
                         <input type="text" class="form-control" name="nmweb" value="{{$d->web_nama}}">
                     </div>
 
                     <div class="form-group">
-                        <label>Deskripsi Website</label>
+                        <label>Descrição do Site</label>
                         <textarea name="desk" rows="5" class="form-control">{{$d->web_deskripsi}}</textarea>
                     </div>
 

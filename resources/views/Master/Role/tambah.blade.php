@@ -3,18 +3,18 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Tambah Role</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Adicionar Função</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <form method="POST" action="{{ route('role.store') }}" name="myForm" enctype="multipart/form-data" onsubmit="return validateForm()">
                 @csrf
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="title" class="form-label">Title</label>
-                        <input type="text" id="title" name="title" class="form-control" placeholder="Title Role">
+                        <label for="title" class="form-label">Usuário</label>
+                        <input type="text" id="title" name="title" class="form-control" placeholder="Nome">
                     </div>
                     <div class="form-group">
-                        <label for="desc" class="form-label">Description</label>
-                        <textarea name="desc" id="desc" rows="4" class="form-control" placeholder="Deskipsi.."></textarea>
+                        <label for="desc" class="form-label">Descrição</label>
+                        <textarea name="desc" id="desc" rows="4" class="form-control" placeholder="Descrição.."></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">

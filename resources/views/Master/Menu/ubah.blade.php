@@ -3,46 +3,46 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Ubah Menu</h6><button aria-label="Close" onclick="resetU()" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Alterar Menu</h6><button aria-label="Close" onclick="resetU()" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <form method="POST" name="myFormU" id="myFormU" enctype="multipart/form-data" onsubmit="return validateFormUpdate()">
                 @csrf
                 @method('PUT')
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="uicon" class="form-label">Icon</label>
-                        <span class="text-gray d-block mb-1">Cari & salin nama dari Icon <a target="_blank" href="https://feathericons.com/">https://feathericons.com/</a></span></span>
+                        <label for="uicon" class="form-label">Icone</label>
+                        <span class="text-gray d-block mb-1">Buscar e copiar o nome do ícone <a target="_blank" href="https://feathericons.com/">https://feathericons.com/</a></span></span>
                         <div class="input-group">
                             <span class="input-group-text bg-gray-light" id="basic-addon1">fe-</span>
                             <input type="text" id="uicon" name="uicon" class="form-control" placeholder="home" aria-label="icon" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="ujudul" class="form-label">Judul</label>
+                        <label for="ujudul" class="form-label">Título</label>
                         <input type="text" id="ujudul" name="ujudul" class="form-control" placeholder="Judul Menu">
                     </div>
                     <div class="form-group">
-                        <label for="type" class="form-label">Type</label>
+                        <label for="type" class="form-label">Tipo</label>
                         <select name="utype" class="form-control" onchange="setTypeU()">
-                            <option value="">-- Pilih --</option>
+                            <option value="">-- Escolher --</option>
                             <option value="1">Menu</option>
                             <option value="2">Sub Menu</option>
                         </select>
                     </div>
                     <div class="form-group d-none" id="vTypeMenuU">
-                        <label for="Uredirect" class="form-label">Redirect</label>
-                        <input type="text" id="uredirect" name="uredirect" class="form-control" placeholder="/redirect">
+                        <label for="Uredirect" class="form-label">Redirecionar</label>
+                        <input type="text" id="uredirect" name="uredirect" class="form-control" placeholder="/redirecionar">
                     </div>
                     <div class="form-group d-none" id="vTypeSubU">
                         <div class="d-flex justify-content-end mb-2">
                             <input type="hidden" id="urandkey">
-                            <button type="button" onclick="addSubU()" class="btn btn-primary-light">Tambah Sub Menu <i class="fa fa-plus"></i></button>
+                            <button type="button" onclick="addSubU()" class="btn btn-primary-light">Adicionar Submenu <i class="fa fa-plus"></i></button>
                         </div>
                         <ul class="list-group" id="ulistsub"></ul>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Salvar Alterações <i class="fe fe-check"></i></button>
+                    <button type="submit" class="btn btn-success">Salvar <i class="fe fe-check"></i></button>
                     <a href="javascript:void(0)" onclick="resetU()" class="btn btn-light" data-bs-dismiss="modal">Cancelar <i class="fe fe-x"></i></a>
                 </div>
             </form>

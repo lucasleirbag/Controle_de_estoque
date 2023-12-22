@@ -3,16 +3,16 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Ubah Merk Barang</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Alterar Marca do Produto</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <input type="hidden" name="idmerkU">
                 <div class="form-group">
-                    <label for="merkU" class="form-label">Merk Barang <span class="text-danger">*</span></label>
+                    <label for="merkU" class="form-label">Marca do Produto<span class="text-danger">*</span></label>
                     <input type="text" name="merkU" class="form-control" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="ketU" class="form-label">Keterangan</label>
+                    <label for="ketU" class="form-label">Descrição</label>
                     <textarea name="ketU" class="form-control" rows="4"></textarea>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
                     Loading...
                 </button>
-                <a href="javascript:void(0)" onclick="checkFormU()" id="btnSalvarU" class="btn btn-success">Salvar Alterações <i class="fe fe-check"></i></a>
+                <a href="javascript:void(0)" onclick="checkFormU()" id="btnSalvarU" class="btn btn-success">Salvar <i class="fe fe-check"></i></a>
                 <a href="javascript:void(0)" class="btn btn-light" onclick="resetU()" data-bs-dismiss="modal">Cancelar <i class="fe fe-x"></i></a>
             </div>
         </div>

@@ -3,16 +3,16 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Tambah Satuan</h6><button aria-label="Close" class="btn-close"
+                <h6 class="modal-title">Adicionar Unidade</h6><button aria-label="Close" class="btn-close"
                     data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="satuan" class="form-label">Nama Satuan <span class="text-danger">*</span></label>
+                    <label for="satuan" class="form-label">Nome da Unidade <span class="text-danger">*</span></label>
                     <input type="text" name="satuan" class="form-control" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="ket" class="form-label">Keterangan</label>
+                    <label for="ket" class="form-label">Descrição</label>
                     <textarea name="ket" class="form-control" rows="4"></textarea>
                 </div>
             </div>

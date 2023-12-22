@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Tambah User</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Adicionar Usuário</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <form method="POST" action="{{ route('user.store') }}" name="myForm" enctype="multipart/form-data" onsubmit="return validateForm()">
                 @csrf
@@ -11,33 +11,33 @@
                     <div class="row">
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="nmlengkap" class="form-label">Nama Lengkap</label>
-                                <input type="text" name="nmlengkap" class="form-control" placeholder="Nama Lengkap..">
+                                <label for="nmlengkap" class="form-label">Nome</label>
+                                <input type="text" name="nmlengkap" class="form-control" placeholder="Nome..">
                             </div>
                             <div class="form-group">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" name="username" class="form-control" placeholder="Username..">
+                                <label for="username" class="form-label">Usuário</label>
+                                <input type="text" name="username" class="form-control" placeholder="Usuário..">
                             </div>
                             <div class="form-group">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" name="email" class="form-control" placeholder="Email@mail.com..">
                             </div>
                             <div class="form-group">
-                                <label for="role" class="form-label">Role</label>
+                                <label for="role" class="form-label">Função</label>
                                 <select name="role" class="form-control">
-                                    <option value="">-- Pilih --</option>
+                                    <option value="">-- Escolha --</option>
                                     @foreach($role as $r)
                                     <option value="{{$r->role_id}}">{{$r->role_title}}</option>
                                     @endforeach
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="pwd" class="form-label">Password</label>
-                                <input type="password" name="pwd" class="form-control" placeholder="Password..">
+                                <label for="pwd" class="form-label">Senha</label>
+                                <input type="password" name="pwd" class="form-control" placeholder="Senha..">
                             </div>
                             <div class="form-group">
-                                <label for="pwdU" class="form-label">Ulangi Password</label>
-                                <input type="password" name="pwdU" class="form-control" placeholder="Password..">
+                                <label for="pwdU" class="form-label">Repetir Senha</label>
+                                <input type="password" name="pwdU" class="form-control" placeholder="Senha..">
                             </div>
                         </div>
                         <div class="col-md-5">

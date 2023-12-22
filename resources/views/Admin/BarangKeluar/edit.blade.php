@@ -3,28 +3,28 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Ubah Barang Keluar</h6><button aria-label="Close" onclick="resetU()" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Alterar Saída de Produto</h6><button aria-label="Close" onclick="resetU()" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
                         <input type="hidden" name="idbkU">
                         <div class="form-group">
-                            <label for="bkkodeU" class="form-label">Kode Barang Keluar <span class="text-danger">*</span></label>
+                            <label for="bkkodeU" class="form-label">Código Saída de Produto <span class="text-danger">*</span></label>
                             <input type="text" name="bkkodeU" readonly class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="tglkeluarU" class="form-label">Tanggal Keluar <span class="text-danger">*</span></label>
+                            <label for="tglkeluarU" class="form-label">Data de Saída<span class="text-danger">*</span></label>
                             <input type="text" name="tglkeluarU" class="form-control datepicker-date" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="tujuanU" class="form-label">Tujuan</label>
+                            <label for="tujuanU" class="form-label">Destino</label>
                             <input type="text" name="tujuanU" class="form-control" placeholder="">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Kode Barang <span class="text-danger me-1">*</span>
+                            <label>Código do Produto <span class="text-danger me-1">*</span>
                                 <input type="hidden" id="statusU" value="true">
                                 <div class="spinner-border spinner-border-sm d-none" id="loaderkdU" role="status">
                                     <span class="visually-hidden">Loading...</span>
@@ -37,25 +37,25 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Nama Barang</label>
+                            <label>Nome do Produto</label>
                             <input type="text" class="form-control" id="nmbarangU" readonly>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Satuan</label>
+                                    <label>Unidade</label>
                                     <input type="text" class="form-control" id="satuanU" readonly>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Jenis</label>
+                                    <label>Local</label>
                                     <input type="text" class="form-control" id="jenisU" readonly>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="jmlU" class="form-label">Jumlah Keluar <span class="text-danger">*</span></label>
+                            <label for="jmlU" class="form-label">Quantidade de Saída <span class="text-danger">*</span></label>
                             <input type="text" name="jmlU" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" placeholder="">
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                     Loading...
                 </button>
                 <a href="javascript:void(0)" onclick="checkFormU()" id="btnSalvarU" class="btn btn-success">Salvar
-                    Perubahan <i class="fe fe-check"></i></a>
+                    <i class="fe fe-check"></i></a>
                 <a href="javascript:void(0)" class="btn btn-light" onclick="resetU()" data-bs-dismiss="modal">Cancelar <i class="fe fe-x"></i></a>
             </div>
         </div>

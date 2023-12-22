@@ -7,11 +7,11 @@ use App\Models\Admin\SubmenuModel; ?>
 @section('content')
 <!-- PAGE-HEADER -->
 <div class="page-header">
-    <h1 class="page-title">Akses</h1>
+    <h1 class="page-title">Acesso</h1>
     <div>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item text-gray">Settings</li>
-            <li class="breadcrumb-item active" aria-current="page">Akses</li>
+            <li class="breadcrumb-item text-gray">Configurações</li>
+            <li class="breadcrumb-item active" aria-current="page">Acesso</li>
         </ol>
     </div>
 </div>
@@ -26,16 +26,16 @@ use App\Models\Admin\SubmenuModel; ?>
                 <div class="row">
                     <div class="col-md-5">
                         <div class="form-group">
-                            <h4 class="text-gray">Role</h4>
+                            <h4 class="text-gray">Função</h4>
                             <div class="d-flex">
                                 <select name="role" class="form-control">
-                                    <option value="">-- Pilih Role --</option>
+                                    <option value="">-- Escolher Função --</option>
                                     @foreach($role as $r)
                                     <option value="{{$r->role_id}}" {{$roleid == $r->role_id ? 'selected' : ''}}>{{$r->role_title}}</option>
                                     @endforeach
                                 </select>
                                 <div class="ms-1">
-                                    <button type="submit" onclick="submitRole()" class="btn btn-primary">Submit</button>
+                                    <button type="submit" onclick="submitRole()" class="btn btn-primary">Entrar</button>
                                 </div>
                             </div>
                         </div>
@@ -44,13 +44,13 @@ use App\Models\Admin\SubmenuModel; ?>
                     <div class="col-md-7 d-flex justify-content-end align-items-center">
                         <div>
                             @if(Session::get('user')->role_slug != $detailrole->role_slug)
-                            <button  class="btn btn-gray me-2" onclick="unsetAll({{$detailrole->role_id}})">Non-aktifkan Semua Akses</button>
+                            <button  class="btn btn-gray me-2" onclick="unsetAll({{$detailrole->role_id}})">Desativar Todos os Acessos</button>
                             @else
-                            <button disabled class="btn btn-gray me-2">Non-aktifkan Semua Akses</button>
+                            <button disabled class="btn btn-gray me-2">Desativar Todos os Acessos</button>
                             @endif
                         </div>
                         <div>
-                            <button class="btn btn-primary" onclick="setAll({{$detailrole->role_id}})">Aktifkan Semua Akses</button>
+                            <button class="btn btn-primary" onclick="setAll({{$detailrole->role_id}})">Ativar Todos os Acessos</button>
                         </div>
                     </div>
                     @endif
@@ -58,17 +58,17 @@ use App\Models\Admin\SubmenuModel; ?>
 
                 @if($detailrole != '')
                 @if(count($menu) > 0)
-                <h4 class="text-gray">Hak Akses Menu <span class="badge bg-primary badge-sm">{{$detailrole == '' ? '' : $detailrole->role_title}}</span></h4>
+                <h4 class="text-gray">Permissões de Acesso ao Menu <span class="badge bg-primary badge-sm">{{$detailrole == '' ? '' : $detailrole->role_title}}</span></h4>
                 @endif
                 <div class="table-responsive mb-4">
                     <table class="table border text-nowrap text-md-nowrap mb-0">
                         <thead>
                             <tr>
                                 <th>Menu</th>
-                                <th width="1%">View</th>
-                                <th width="1%">Create</th>
-                                <th width="1%">Update</th>
-                                <th width="1%">Delete</th>
+                                <th width="1%">Ver</th>
+                                <th width="1%">Criar</th>
+                                <th width="1%">Atualizar</th>
+                                <th width="1%">Deletar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -158,7 +158,7 @@ use App\Models\Admin\SubmenuModel; ?>
                     </table>
                 </div>
                 @if(count($menusub) > 0)
-                <h4 class="text-gray">Hak Akses Sub Menu <span class="badge bg-primary badge-sm">{{$detailrole == '' ? '' : $detailrole->role_title}}</span></h4>
+                <h4 class="text-gray">Permissões de Acesso ao Submenu <span class="badge bg-primary badge-sm">{{$detailrole == '' ? '' : $detailrole->role_title}}</span></h4>
                 @endif
                 @foreach($menusub as $ms)
                 <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
@@ -180,10 +180,10 @@ use App\Models\Admin\SubmenuModel; ?>
                         <thead>
                             <tr>
                                 <th>Menu</th>
-                                <th width="1%">View</th>
-                                <th width="1%">Create</th>
-                                <th width="1%">Update</th>
-                                <th width="1%">Delete</th>
+                                <th width="1%">Ver</th>
+                                <th width="1%">Criar</th>
+                                <th width="1%">Atualizar</th>
+                                <th width="1%">Deletar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -309,7 +309,7 @@ use App\Models\Admin\SubmenuModel; ?>
                 @endforeach
 
                 <div class="d-flex justify-content-between mb-2">
-                    <h4 class="text-gray">Hak Akses Settings <span class="badge bg-primary badge-sm">{{$detailrole == '' ? '' : $detailrole->role_title}}</span></h4>
+                    <h4 class="text-gray">Permissões de Acesso às Configurações <span class="badge bg-primary badge-sm">{{$detailrole == '' ? '' : $detailrole->role_title}}</span></h4>
                     <?php
                     $getView2 = AksesModel::where(array('othermenu_id' => 1, 'role_id' => $detailrole->role_id, 'akses_type' => 'view'))->first();
                     ?>
@@ -330,10 +330,10 @@ use App\Models\Admin\SubmenuModel; ?>
                         <thead>
                             <tr>
                                 <th>Menu</th>
-                                <th width="1%">View</th>
-                                <th width="1%">Create</th>
-                                <th width="1%">Update</th>
-                                <th width="1%">Delete</th>
+                                <th width="1%">Ver</th>
+                                <th width="1%">Criar</th>
+                                <th width="1%">Atualizar</th>
+                                <th width="1%">Deletar</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -12,7 +12,7 @@
                     <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
                     Loading...
                 </button>
-                <button onclick="submitFormH()" class="btn btn-danger-light pd-x-25" id="btnSubmit">Sim/button>
+                <button onclick="submitFormH()" class="btn btn-danger-light pd-x-25" id="btnSubmit">Sim</button>
                 <button type="reset" data-bs-dismiss="modal" class="btn btn-default pd-x-25">Cancelar</button>
             </div>
         </div>

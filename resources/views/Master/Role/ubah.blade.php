@@ -3,23 +3,23 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Ubah Role</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Alterar Função</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <form method="POST" name="myFormU" id="myFormU" enctype="multipart/form-data" onsubmit="return validateFormUpdate()">
                 @csrf
                 @method('PUT')
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="utitle" class="form-label">Title</label>
-                        <input type="text" id="utitle" name="utitle" class="form-control" placeholder="Title Role">
+                        <label for="utitle" class="form-label">Usuário</label>
+                        <input type="text" id="utitle" name="utitle" class="form-control" placeholder="Nome">
                     </div>
                     <div class="form-group">
-                        <label for="udesc" class="form-label">Description</label>
-                        <textarea name="udesc" id="udesc" rows="4" class="form-control" placeholder="Deskipsi.."></textarea>
+                        <label for="udesc" class="form-label">Descrição</label>
+                        <textarea name="udesc" id="udesc" rows="4" class="form-control" placeholder="Descrição.."></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Salvar Alterações <i class="fe fe-check"></i></button>
+                    <button type="submit" class="btn btn-success">Salvar <i class="fe fe-check"></i></button>
                     <button type="reset" class="btn btn-light" data-bs-dismiss="modal">Cancelar <i class="fe fe-x"></i></button>
                 </div>
             </form>
