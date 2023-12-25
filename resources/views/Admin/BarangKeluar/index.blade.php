@@ -38,7 +38,7 @@
                                 <th class="border-bottom-0">Código Saída do Produto</th>
                                 <th class="border-bottom-0">Número do Pedido</th>
                                 <th class="border-bottom-0">Produto</th>
-                                <th class="border-bottom-0">Quantidade de Saída</th>
+                                <th class="border-bottom-0">Quantidade</th>
                                 <th class="border-bottom-0">Destino</th>
                                 <th class="border-bottom-0" width="1%">Ação</th>
                             </thead>

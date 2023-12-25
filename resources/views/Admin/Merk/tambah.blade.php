@@ -39,7 +39,7 @@
             resetValid();
 
             if (merk == "") {
-                validasi('Nama Merk wajib di isi!', 'warning');
+                validasi('Nome da Marca deve ser preenchido!', 'warning');
                 $("input[name='merk']").addClass('is-invalid');
                 setLoading(false);
                 return false;

@@ -72,35 +72,35 @@
         resetValid();
 
         if (namaL == "") {
-            validasi('Nama Lengkap wajib di isi!', 'warning');
+            validasi('Nome deve ser preenchido!', 'warning');
             $("input[name='nmlengkap']").addClass('is-invalid');
             return false;
         } else if (user == '') {
-            validasi('Username wajib di isi!', 'warning');
+            validasi('Nome de usuário deve ser preenchido!', 'warning');
             $("input[name='username']").addClass('is-invalid');
             return false;
         } else if (email == '') {
-            validasi('Email wajib di isi!', 'warning');
+            validasi('E-mail deve ser preenchido!', 'warning');
             $("input[name='email']").addClass('is-invalid');
             return false;
         } else if (role == '') {
-            validasi('Role wajib di pilih!', 'warning');
+            validasi('Função deve ser preenchida!', 'warning');
             $("select[name='role']").addClass('is-invalid');
             return false;
         } else if (pwd == '') {
-            validasi('Password wajib di isi!', 'warning');
+            validasi('Senha deve ser preenchida!', 'warning');
             $("input[name='pwd']").addClass('is-invalid');
             $("input[name='pwdU']").addClass('is-invalid');
             return false;
         } else if (pwd !== '' || kpwd !== '') {
 
             if (pwd.length < 6) {
-                validasi('Panjang Password minimal 6 karakter!', 'warning');
+                validasi('A senha deve ter no mínimo 6 caracteres!', 'warning');
                 $("input[name='pwd']").addClass('is-invalid');
                 $("input[name='pwdU']").addClass('is-invalid');
                 return false;
             } else if (pwd !== kpwd) {
-                validasi('Konfirmasi Password tidak sesuai!', 'warning');
+                validasi('Confirmação de senha incorreta!', 'warning');
                 $("input[name='pwd']").addClass('is-invalid');
                 $("input[name='pwdU']").addClass('is-invalid');
                 return false;

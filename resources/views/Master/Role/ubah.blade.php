@@ -32,7 +32,7 @@
         const title = document.forms["myForm"]["utitle"].value;
 
         if (title == '') {
-            validasi('Title wajib di isi!', 'warning');
+            validasi('Usuário deve ser preenchido!', 'warning');
             $("input[name='utitle']").addClass('is-invalid');
             return false;
         }

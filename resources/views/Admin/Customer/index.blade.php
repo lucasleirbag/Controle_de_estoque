@@ -3,11 +3,11 @@
 @section('content')
     <!-- PAGE-HEADER -->
     <div class="page-header">
-        <h1 class="page-title">Clientes</h1>
+        <h1 class="page-title">Local</h1>
         <div>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item text-gray">Admin</li>
-                <li class="breadcrumb-item active" aria-current="page">Clientes</li>
+                <li class="breadcrumb-item active" aria-current="page">Local</li>
             </ol>
         </div>
     </div>
@@ -19,7 +19,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header justify-content-between">
-                    <h3 class="card-title">Lista de Clientes</h3>
+                    <h3 class="card-title">Lista de Locais</h3>
                     @if ($hakTambah > 0)
                         <div>
                             <a class="modal-effect btn btn-primary-light" data-bs-effect="effect-super-scaled"
@@ -34,8 +34,7 @@
                             class="table table-bordered text-nowrap border-bottom dataTable no-footer dtr-inline collapsed">
                             <thead>
                                 <th class="border-bottom-0" width="1%">ID</th>
-                                <th class="border-bottom-0">Cliente</th>
-                                <th class="border-bottom-0">Telefone</th>
+                                <th class="border-bottom-0">Local</th>
                                 <th class="border-bottom-0">Endereço</th>
                                 <th class="border-bottom-0" width="1%">Ação</th>
                             </thead>
@@ -56,7 +55,6 @@
         function update(data) {
             $("input[name='idcustomerU']").val(data.customer_id);
             $("input[name='customerU']").val(data.customer_nama.replace(/_/g, ' '));
-            $("input[name='notelpU']").val(data.customer_notelp);
             $("textarea[name='alamatU']").val(data.customer_alamat.replace(/_/g, ' '));
         }
 
@@ -113,11 +111,7 @@
                     {
                         data: 'customer_nama',
                         name: 'customer_nama',
-                    },
-                    {
-                        data: 'notelp',
-                        name: 'customer_notelp',
-                    },
+                    },                
                     {
                         data: 'alamat',
                         name: 'customer_alamat',

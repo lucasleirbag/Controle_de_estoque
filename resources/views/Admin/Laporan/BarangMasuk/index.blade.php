@@ -51,7 +51,7 @@
                             <th class="border-bottom-0">Número do Pedido</th>
                             <th class="border-bottom-0">Local</th>
                             <th class="border-bottom-0">Produto</th>
-                            <th class="border-bottom-0">Quantidade de Entrada</th>
+                            <th class="border-bottom-0">Quantidade</th>
                         </thead>
                         <tbody></tbody>
                     </table>
@@ -142,7 +142,7 @@
         if (tglawal != '' && tglakhir != '') {
             table.ajax.reload(null, false);
         } else {
-            validasi("Isi dulu Form Filter Tanggal!", 'warning');
+            validasi("Preencha primeiro o formulário de filtro de datas!", 'warning');
         }
 
     }
@@ -163,11 +163,11 @@
             );
         } else {
             swal({
-                title: "Yakin Print Semua Data?",
+                title: "Tem certeza que quer imprimir todos os dados?",
                 type: "warning",
                 buttons: true,
                 dangerMode: true,
-                confirmButtonText: "Yakin",
+                confirmButtonText: "Sim",
                 cancelButtonText: 'Cancelar',
                 showCancelButton: true,
                 showConfirmButton: true,
@@ -197,11 +197,11 @@
             );
         } else {
             swal({
-                title: "Yakin export PDF Semua Data?",
+                title: "Tem certeza que quer exportar todos os dados para PDF?",
                 type: "warning",
                 buttons: true,
                 dangerMode: true,
-                confirmButtonText: "Yakin",
+                confirmButtonText: "Sim",
                 cancelButtonText: 'Cancelar',
                 showCancelButton: true,
                 showConfirmButton: true,

@@ -3,12 +3,12 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Editar Cliente do Produto</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Editar Local</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <input type="hidden" name="idcustomerU">
                 <div class="form-group">
-                    <label for="customerU" class="form-label">Cliente do Produto <span class="text-danger">*</span></label>
+                    <label for="customerU" class="form-label">Local<span class="text-danger">*</span></label>
                     <input type="text" name="customerU" class="form-control" placeholder="">
                 </div>
                 <div class="form-group">
@@ -40,7 +40,7 @@
         resetValidU();
 
         if (customer == "") {
-            validasi('Nama Customer wajib di isi!', 'warning');
+            validasi('O nome do local deve ser preenchido!', 'warning');
             $("input[name='customerU']").addClass('is-invalid');
             setLoadingU(false);
             return false;

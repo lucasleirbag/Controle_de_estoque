@@ -39,7 +39,7 @@
             resetValid();
 
             if (satuan == "") {
-                validasi('Nama Satuan wajib di isi!', 'warning');
+                validasi('O nome da unidade deve ser preenchido!', 'warning');
                 $("input[name='satuan']").addClass('is-invalid');
                 setLoading(false);
                 return false;

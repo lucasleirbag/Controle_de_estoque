@@ -134,12 +134,12 @@
         } else if (newp !== '' || confirm !== '') {
 
             if (newp.length < 6) {
-                validasi('Panjang Password minimal 6 karakter!', 'warning');
+                validasi('A senha deve ter no mínimo 6 caracteres!', 'warning');
                 $("input[name='newpassword']").addClass('is-invalid');
                 $("input[name='confirmpassword']").addClass('is-invalid');
                 return false;
             } else if (newp !== confirm) {
-                validasi('Konfirmasi Password tidak sesuai!', 'warning');
+                validasi('Confirmação de senha incorreta!', 'warning');
                 $("input[name='newpassword']").addClass('is-invalid');
                 $("input[name='confirmpassword']").addClass('is-invalid');
                 return false;
@@ -155,7 +155,7 @@
         resetValid();
 
         if (nmlengkap == "") {
-            validasi('Nama Lengkap Wajib di isi!', 'warning');
+            validasi('Nome deve ser preenchido!', 'warning');
             $("input[name='nmlengkap']").addClass('is-invalid');
             return false;
         } else if (username == "") {
@@ -163,7 +163,7 @@
             $("input[name='username']").addClass('is-invalid');
             return false;
         } else if (email == "") {
-            validasi('Email Wajib di isi!', 'warning');
+            validasi('E-mail deve ser preenchido!', 'warning');
             $("input[name='email']").addClass('is-invalid');
             return false;
         }

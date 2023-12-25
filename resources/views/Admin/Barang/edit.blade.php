@@ -91,12 +91,12 @@
             setLoadingU(false);
             return false;
         } else if (nama == "") {
-            validasi('Nama Barang wajib di isi!', 'warning');
+            validasi('Nome do Produto deve ser preenchido!', 'warning');
             $("input[name='namaU']").addClass('is-invalid');
             setLoadingU(false);
             return false;
         } else if (harga == "") {
-            validasi('Harga Barang wajib di isi!', 'warning');
+            validasi('O preço do produto deve ser preenchido!', 'warning');
             $("input[name='hargaU']").addClass('is-invalid');
             setLoadingU(false);
             return false;

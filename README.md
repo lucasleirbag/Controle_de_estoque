@@ -11,7 +11,7 @@ Para a aparência, já integrei o modelo de administração 'bootstrap v5' chama
 * **Unidades de Medida**
 * **Marcas de Produtos**
 * **Produtos**
-* **Clientes**
+* **Locais**
 * **Entrada de Produtos**
 * **Saída de Produtos**
 * **Relatório de Entrada de Produtos**

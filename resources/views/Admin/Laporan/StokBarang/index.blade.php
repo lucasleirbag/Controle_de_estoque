@@ -147,7 +147,7 @@
         if (tglawal != '' && tglakhir != '') {
             table.ajax.reload(null, false);
         } else {
-            validasi("Isi dulu Form Filter Tanggal!", 'warning');
+            validasi("Preencha primeiro o formulário de filtro de datas!", 'warning');
         }
 
     }

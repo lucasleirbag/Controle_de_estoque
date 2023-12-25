@@ -14,7 +14,7 @@ class JenisBarangController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Local";
+        $data["title"] = "Tipo";
         $data["hakTambah"] = AksesModel::leftJoin('tbl_submenu', 'tbl_submenu.submenu_id', '=', 'tbl_akses.submenu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_submenu.submenu_judul' => 'Local', 'tbl_akses.akses_type' => 'create'))->count();
         return view('Admin.JenisBarang.index', $data);
     }

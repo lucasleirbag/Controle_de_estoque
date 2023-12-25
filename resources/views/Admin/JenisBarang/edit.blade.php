@@ -3,12 +3,12 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Editar Local</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Editar Tipo</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <input type="hidden" name="idjenisbarangU">
                 <div class="form-group">
-                    <label for="jenisbarangU" class="form-label">Nome do Local <span class="text-danger">*</span></label>
+                    <label for="jenisbarangU" class="form-label">Nome do Tipo <span class="text-danger">*</span></label>
                     <input type="text" name="jenisbarangU" class="form-control" placeholder="">
                 </div>
                 <div class="form-group">
@@ -36,7 +36,7 @@
         resetValidU();
 
         if (jenis == "") {
-            validasi('Jenis Barang wajib di isi!', 'warning');
+            validasi('O local do Produto deve ser preenchido!', 'warning');
             $("input[name='jenisbarangU']").addClass('is-invalid');
             setLoadingU(false);
             return false;

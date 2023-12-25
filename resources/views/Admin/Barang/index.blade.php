@@ -33,7 +33,7 @@
                             <th class="border-bottom-0">Imagem</th>
                             <th class="border-bottom-0">Número do Pedido</th>
                             <th class="border-bottom-0">Nome</th>
-                            <th class="border-bottom-0">Local</th>
+                            <th class="border-bottom-0">Tipo</th>
                             <th class="border-bottom-0">Unidade</th>
                             <th class="border-bottom-0">Marca</th>
                             <th class="border-bottom-0">Estoque</th>

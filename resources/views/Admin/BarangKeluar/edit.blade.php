@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="jmlU" class="form-label">Quantidade de Saída <span class="text-danger">*</span></label>
+                            <label for="jmlU" class="form-label">Quantidade <span class="text-danger">*</span></label>
                             <input type="text" name="jmlU" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" placeholder="">
                         </div>
                     </div>
@@ -138,7 +138,7 @@
             setLoading(Ufalse);
             return false;
         } else if (status == "false" || kdbarang == '') {
-            validasi('Barang wajib di pilih!', 'warning');
+            validasi('Produto deve ser selecionado!', 'warning');
             $("input[name='kdbarangU']").addClass('is-invalid');
             setLoadingU(false);
             return false;

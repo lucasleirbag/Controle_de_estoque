@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Pilih Barang</h6><button onclick="resetB('tambah')" aria-label="Close" class="btn-close"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Escolher Produto</h6><button onclick="resetB('tambah')" aria-label="Close" class="btn-close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body p-4 pb-5">
                 <input type="hidden" value="tambah" name="param">
@@ -12,15 +12,15 @@
                     <table id="table-2" width="100%" class="table table-bordered text-nowrap border-bottom dataTable no-footer dtr-inline collapsed">
                         <thead>
                             <th class="border-bottom-0" width="1%">No</th>
-                            <th class="border-bottom-0">Gambar</th>
-                            <th class="border-bottom-0">Kode Barang</th>
-                            <th class="border-bottom-0">Nama Barang</th>
-                            <th class="border-bottom-0">Jenis</th>
-                            <th class="border-bottom-0">Satuan</th>
-                            <th class="border-bottom-0">Merk</th>
-                            <th class="border-bottom-0">Stok</th>
-                            <th class="border-bottom-0">Harga</th>
-                            <th class="border-bottom-0" width="1%">Action</th>
+                            <th class="border-bottom-0">Imagem</th>
+                            <th class="border-bottom-0">Número do Pedido</th>
+                            <th class="border-bottom-0">Nome do Produto</th>
+                            <th class="border-bottom-0">Local</th>
+                            <th class="border-bottom-0">SatuaUnidade</th>
+                            <th class="border-bottom-0">Marca</th>
+                            <th class="border-bottom-0">Estoque</th>
+                            <th class="border-bottom-0">Preço</th>
+                            <th class="border-bottom-0" width="1%">Ação</th>
                         </thead>
                         <tbody></tbody>
                     </table>

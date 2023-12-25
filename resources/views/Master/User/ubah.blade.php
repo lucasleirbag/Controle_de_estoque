@@ -85,30 +85,30 @@
         resetValidU();
 
         if (namaL == "") {
-            validasi('Nama Lengkap wajib di isi!', 'warning');
+            validasi('Nome deve ser preenchido!', 'warning');
             $("input[name='nmlengkapU']").addClass('is-invalid');
             return false;
         } else if (user == '') {
-            validasi('Username wajib di isi!', 'warning');
+            validasi('Nome de usuário deve ser preenchido!', 'warning');
             $("input[name='usernameU']").addClass('is-invalid');
             return false;
         } else if (email == '') {
-            validasi('Email wajib di isi!', 'warning');
+            validasi('E-mail deve ser preenchido!', 'warning');
             $("input[name='emailU']").addClass('is-invalid');
             return false;
         } else if (role == '') {
-            validasi('Role wajib di pilih!', 'warning');
+            validasi('Função deve ser preenchida!', 'warning');
             $("select[name='roleU']").addClass('is-invalid');
             return false;
         } else if (pwd !== '' || kpwd !== '') {
 
             if (pwd.length < 6) {
-                validasi('Panjang Password minimal 6 karakter!', 'warning');
+                validasi('A senha deve ter no mínimo 6 caracteres!', 'warning');
                 $("input[name='pwdU']").addClass('is-invalid');
                 $("input[name='pwdUU']").addClass('is-invalid');
                 return false;
             } else if (pwd !== kpwd) {
-                validasi('Konfirmasi Password tidak sesuai!', 'warning');
+                validasi('Confirmação de senha incorreta!', 'warning');
                 $("input[name='pwdU']").addClass('is-invalid');
                 $("input[name='pwdUU']").addClass('is-invalid');
                 return false;

@@ -17,9 +17,9 @@
                             <input type="text" name="tglmasuk" class="form-control datepicker-date" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="customer" class="form-label">Escolher Cliente <span class="text-danger">*</span></label>
+                            <label for="customer" class="form-label">Escolher Local <span class="text-danger">*</span></label>
                             <select name="customer" id="customer" class="form-control">
-                                <option value="">-- Escolher Cliente --</option>
+                                <option value="">-- Escolher Local --</option>
                                 @foreach ($customer as $c)
                                 <option value="{{ $c->customer_id }}">{{ $c->customer_nama }}</option>
                                 @endforeach
@@ -53,13 +53,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Local</label>
+                                    <label>Tipo</label>
                                     <input type="text" class="form-control" id="jenis" readonly>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="jml" class="form-label">Quantidade de Entrada <span class="text-danger">*</span></label>
+                            <label for="jml" class="form-label">Quantidade <span class="text-danger">*</span></label>
                             <input type="text" name="jml" value="0" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" placeholder="">
                         </div>
                     </div>
@@ -136,17 +136,17 @@
         resetValid();
 
         if (tglmasuk == "") {
-            validasi('Tanggal Masuk wajib di isi!', 'warning');
+            validasi('Data de entrada deve ser preenchida!', 'warning');
             $("input[name='tglmasuk']").addClass('is-invalid');
             setLoading(false);
             return false;
         } else if (customer == "") {
-            validasi('Customer wajib di pilih!', 'warning');
+            validasi('Local deve ser selecionado!', 'warning');
             $("select[name='customer']").addClass('is-invalid');
             setLoading(false);
             return false;
         } else if (status == "false") {
-            validasi('Barang wajib di pilih!', 'warning');
+            validasi('Produto deve ser selecionado!', 'warning');
             $("input[name='kdbarang']").addClass('is-invalid');
             setLoading(false);
             return false;
