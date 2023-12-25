@@ -11,7 +11,7 @@ class AppreanceController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Tampilan/Tema";
+        $data["title"] = "Aparência/Tema";
         $data["data"] = AppreanceModel::where('user_id', '=', Session::get('user')->user_id)->first();
         return view('Master.Appreance.index', $data);
     }
@@ -85,7 +85,7 @@ class AppreanceController extends Controller
             }
         }
 
-        $data["title"] = "Tampilan/Tema";
+        $data["title"] = "Aparência/Tema";
         $data["data"] = AppreanceModel::where('user_id', '=', Session::get('user')->user_id)->first();
 
         //redirect to index

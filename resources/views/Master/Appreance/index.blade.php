@@ -5,11 +5,11 @@
 
 <!-- PAGE-HEADER -->
 <div class="page-header">
-    <h1 class="page-title">Tampilan/Tema</h1>
+    <h1 class="page-title">Aparência/Tema</h1>
     <div>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item text-gray">Settings</li>
-            <li class="breadcrumb-item active" aria-current="page">Tampilan/Tema</li>
+            <li class="breadcrumb-item text-gray">Configurações</li>
+            <li class="breadcrumb-item active" aria-current="page">Aparência/Tema</li>
         </ol>
     </div>
 </div>
@@ -35,7 +35,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-layout fs-40 d-block my-4"></i>
-                                        Vertical Layout
+                                        Layout Vertical
                                     </div>
                                 </span>
                             </label>
@@ -48,7 +48,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-layout fs-40 d-block my-4"></i>
-                                        Horizontal Layout
+                                        Layout Horizontal
                                     </div>
                                 </span>
                             </label>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Atur Tampilan</button>
+                    <button type="submit" class="btn btn-success">Ajustar Aparência</button>
                 </div>
             </form>
         </div>
@@ -80,7 +80,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-sun fs-40 d-block my-4"></i>
-                                        Light Mode
+                                        Modo Claro
                                     </div>
                                 </span>
                             </label>
@@ -93,7 +93,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-moon fs-40 d-block my-4"></i>
-                                        Dark Mode
+                                        Modo Escuro
                                     </div>
                                 </span>
                             </label>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Atur Tampilan</button>
+                    <button type="submit" class="btn btn-success">Ajustar Visualização</button>
                 </div>
             </form>
         </div>
@@ -109,7 +109,7 @@
     <div class="col-md-6">
         <div class="card mb-5">
             <div class="card-header justify-content-between">
-                <h3 class="card-title">Warna Menu</h3>
+                <h3 class="card-title">Cor do Menu</h3>
             </div>
             <form action="{{url('admin/appreance/menu')}}" method="POST">
                 @csrf
@@ -125,7 +125,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Light Menu
+                                        Branco
                                     </div>
                                 </span>
                             </label>
@@ -138,7 +138,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Color Menu
+                                        Azul Claro
                                     </div>
                                 </span>
                             </label>
@@ -151,7 +151,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Dark Menu
+                                        Azul Escuro
                                     </div>
                                 </span>
                             </label>
@@ -164,7 +164,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Gradient Menu
+                                        Gradiente
                                     </div>
                                 </span>
                             </label>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Atur Tampilan</button>
+                    <button type="submit" class="btn btn-success">Ajustar Aparência</button>
                 </div>
             </form>
         </div>
@@ -180,7 +180,7 @@
     <div class="col-md-6">
         <div class="card mb-5">
             <div class="card-header justify-content-between">
-                <h3 class="card-title">Warna Header</h3>
+                <h3 class="card-title">Cor do Cabeçalho</h3>
             </div>
             <form action="{{url('admin/appreance/header')}}" method="POST">
                 @csrf
@@ -196,7 +196,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Light Header
+                                        Branco
                                     </div>
                                 </span>
                             </label>
@@ -209,7 +209,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Color Header
+                                        Azul Claro
                                     </div>
                                 </span>
                             </label>
@@ -222,7 +222,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Dark Header
+                                        Azul Escuro
                                     </div>
                                 </span>
                             </label>
@@ -235,7 +235,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Gradient Header
+                                        Gradiente
                                     </div>
                                 </span>
                             </label>
@@ -243,7 +243,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Atur Tampilan</button>
+                    <button type="submit" class="btn btn-success">Ajustar Aparência</button>
                 </div>
             </form>
         </div>
@@ -255,7 +255,7 @@
             @endif
             <div class="card mb-5">
                 <div class="card-header justify-content-between">
-                    <h3 class="card-title">Side Menu Style</h3>
+                    <h3 class="card-title">Estilo do Menu Lateral</h3>
                 </div>
                 <form action="{{url('admin/appreance/sidestyle')}}" method="POST">
                     @csrf
@@ -271,7 +271,7 @@
                                     <span class="selectgroup-button">
                                         <div>
                                             <i class="fe fe-layout fs-40 d-block my-4"></i>
-                                            Default Menu
+                                            Menu Padrão
                                         </div>
                                     </span>
                                 </label>
@@ -284,7 +284,7 @@
                                     <span class="selectgroup-button">
                                         <div>
                                             <i class="fe fe-layout fs-40 d-block my-4"></i>
-                                            Icon Overlay
+                                            Sobreposição de Ícone
                                         </div>
                                     </span>
                                 </label>
@@ -292,7 +292,7 @@
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-center">
-                        <button type="submit" class="btn btn-success">Atur Tampilan</button>
+                        <button type="submit" class="btn btn-success">Ajustar Aparência</button>
                     </div>
                 </form>
             </div>
