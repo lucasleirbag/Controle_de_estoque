@@ -3,11 +3,11 @@
 @section('content')
     <!-- PAGE-HEADER -->
     <div class="page-header">
-        <h1 class="page-title">Cliente</h1>
+        <h1 class="page-title">Clientes</h1>
         <div>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item text-gray">Admin</li>
-                <li class="breadcrumb-item active" aria-current="page">Cliente</li>
+                <li class="breadcrumb-item active" aria-current="page">Clientes</li>
             </ol>
         </div>
     </div>
@@ -19,7 +19,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header justify-content-between">
-                    <h3 class="card-title">Lista de Cliente</h3>
+                    <h3 class="card-title">Lista de Clientes</h3>
                     @if ($hakTambah > 0)
                         <div>
                             <a class="modal-effect btn btn-primary-light" data-bs-effect="effect-super-scaled"
