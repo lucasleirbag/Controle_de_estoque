@@ -67,9 +67,9 @@ use Carbon\Carbon;
 <body>
 
     <center>
-        <h1 class="font-medium">Laporan Stok Barang</h1>
+        <h1 class="font-medium">Relatório de Estoque de Produtos</h1>
         @if($tglawal == '')
-        <h4 class="font-medium">Semua Tanggal</h4>
+        <h4 class="font-medium">Todas as Datas</h4>
         @else
         <h4 class="font-medium">{{Carbon::parse($tglawal)->translatedFormat('d F Y')}} - {{Carbon::parse($tglakhir)->translatedFormat('d F Y')}}</h4>
         @endif
@@ -80,11 +80,11 @@ use Carbon\Carbon;
         <thead>
             <tr>
                 <th align="center" width="1%">NO</th>
-                <th>KODE BARANG</th>
-                <th>BARANG</th>
-                <th>STOK AWAL</th>
-                <th>JML MASUK</th>
-                <th>JML KELUAR</th>
+                <th>NÚMERO DO PEDIDO</th>
+                <th>PRODUTO</th>
+                <th>ESTOQUE INICIAL</th>
+                <th>QUANTIDADE DE ENTRADA</th>
+                <th>QUANTIDADE DE SAÍDA</th>
                 <th>TOTAL</th>
             </tr>
         </thead>

@@ -119,7 +119,7 @@ Route::group(['middleware' => 'userlogin'], function () {
     });
 
     Route::middleware(['checkRoleUser:/lap-barang-masuk,submenu'])->group(function () {
-        // Laporan Barang Masuk
+        // Relatório de Entrada de Produtos
         Route::resource('/admin/lap-barang-masuk', \App\Http\Controllers\Admin\LapBarangMasukController::class);
         Route::get('/admin/lapbarangmasuk/print/', [LapBarangMasukController::class, 'print'])->name('lap-bm.print');
         Route::get('/admin/lapbarangmasuk/pdf/', [LapBarangMasukController::class, 'pdf'])->name('lap-bm.pdf');
@@ -127,7 +127,7 @@ Route::group(['middleware' => 'userlogin'], function () {
     });
 
     Route::middleware(['checkRoleUser:/lap-barang-keluar,submenu'])->group(function () {
-        // Laporan Barang Keluar
+        // Relatório de Saída de Produtos
         Route::resource('/admin/lap-barang-keluar', \App\Http\Controllers\Admin\LapBarangKeluarController::class);
         Route::get('/admin/lapbarangkeluar/print/', [LapBarangKeluarController::class, 'print'])->name('lap-bk.print');
         Route::get('/admin/lapbarangkeluar/pdf/', [LapBarangKeluarController::class, 'pdf'])->name('lap-bk.pdf');
@@ -135,7 +135,7 @@ Route::group(['middleware' => 'userlogin'], function () {
     });
 
     Route::middleware(['checkRoleUser:/lap-stok-barang,submenu'])->group(function () {
-        // Laporan Stok Barang
+        // Relatório de Estoque de Produtos
         Route::resource('/admin/lap-stok-barang', \App\Http\Controllers\Admin\LapStokBarangController::class);
         Route::get('/admin/lapstokbarang/print/', [LapStokBarangController::class, 'print'])->name('lap-sb.print');
         Route::get('/admin/lapstokbarang/pdf/', [LapStokBarangController::class, 'pdf'])->name('lap-sb.pdf');

@@ -48,9 +48,9 @@ class LapBarangKeluarController extends Controller
         $pdf = PDF::loadView('Admin.Laporan.BarangKeluar.pdf', $data);
         
         if($request->tglawal){
-            return $pdf->download('lap-bk-'.$request->tglawal.'-'.$request->tglakhir.'.pdf');
+            return $pdf->download('Relatório de Saída-'.$request->tglawal.'-'.$request->tglakhir.'.pdf');
         }else{
-            return $pdf->download('lap-bk-semua-tanggal.pdf');
+            return $pdf->download('Relatório Saída de Produtos.pdf');
         }
         
     }

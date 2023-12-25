@@ -86,7 +86,7 @@
         setLoadingU(true);
         resetValidU();
         if (kode == "") {
-            validasi('Kode Barang wajib di isi!', 'warning');
+            validasi('Código do produto deve ser preenchido!', 'warning');
             $("input[name='kodeU']").addClass('is-invalid');
             setLoadingU(false);
             return false;

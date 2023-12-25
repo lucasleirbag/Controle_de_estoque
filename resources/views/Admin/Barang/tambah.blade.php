@@ -80,7 +80,7 @@
         setLoading(true);
         resetValid();
         if (kode == "") {
-            validasi('Kode Barang wajib di isi!', 'warning');
+            validasi('Código do produto deve ser preenchido!', 'warning');
             $("input[name='kode']").addClass('is-invalid');
             setLoading(false);
             return false;

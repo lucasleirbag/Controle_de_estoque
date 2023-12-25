@@ -65,9 +65,9 @@ use Carbon\Carbon;
 <body>
 
     <center>
-        <h1 class="font-medium">Laporan Barang Keluar</h1>
+        <h1 class="font-medium">Relatório de Saída de Produtos</h1>
         @if($tglawal == '')
-        <h4 class="font-medium">Semua Tanggal</h4>
+        <h4 class="font-medium">Todas as Datas</h4>
         @else
         <h4 class="font-medium">{{Carbon::parse($tglawal)->translatedFormat('d F Y')}} - {{Carbon::parse($tglakhir)->translatedFormat('d F Y')}}</h4>
         @endif
@@ -78,12 +78,12 @@ use Carbon\Carbon;
         <thead>
             <tr>
                 <th align="center" width="1%">NO</th>
-                <th>TGL KELUAR</th>
-                <th>KODE BRG KELUAR</th>
-                <th>KODE BARANG</th>
-                <th>BARANG</th>
-                <th>JML KELUAR</th>
-                <th>TUJUAN</th>
+                <th>DATA DE SAÍDA</th>
+                <th>CÓDIGO DE SAÍDA DO PRODUTO</th>
+                <th>NÚMERO DO PEDIDO</th>
+                <th>PRODUTO</th>
+                <th>QUANTIDADE DE SAÍDA</th>
+                <th>DESTINO</th>
             </tr>
         </thead>
         <tbody>

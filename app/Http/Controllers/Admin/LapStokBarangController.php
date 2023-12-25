@@ -41,9 +41,9 @@ class LapStokBarangController extends Controller
         $pdf = PDF::loadView('Admin.Laporan.StokBarang.pdf', $data);
         
         if($request->tglawal){
-            return $pdf->download('lap-stok-'.$request->tglawal.'-'.$request->tglakhir.'.pdf');
+            return $pdf->download('Relatório de Estoque-'.$request->tglawal.'-'.$request->tglakhir.'.pdf');
         }else{
-            return $pdf->download('lap-stok-semua-tanggal.pdf');
+            return $pdf->download('Relatório de Estoque.pdf');
         }
         
     }
