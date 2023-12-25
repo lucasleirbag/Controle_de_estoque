@@ -15,7 +15,7 @@ class LapStokBarangController extends Controller
 {
     public function index(Request $request)
     {
-        $data["title"] = "Relatório de Estoque de Produtos";
+        $data["title"] = "Relatório Estoque";
         return view('Admin.Laporan.StokBarang.index', $data);
     }
 

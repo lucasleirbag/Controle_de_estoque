@@ -15,7 +15,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $data["title"] = "User";
+        $data["title"] = "Usuário";
         $data["role"] = RoleModel::latest()->get();
         return view('Master.User.index', $data);
     }

@@ -14,7 +14,7 @@ class LapBarangMasukController extends Controller
 {
     public function index(Request $request)
     {
-        $data["title"] = "Relatório de Produtos Recebidos";
+        $data["title"] = "Relatório Entrada";
         return view('Admin.Laporan.BarangMasuk.index', $data);
     }
 

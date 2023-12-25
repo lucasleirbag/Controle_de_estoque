@@ -14,7 +14,7 @@ class LapBarangKeluarController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Relatório de Produtos Vendidos";
+        $data["title"] = "Relatório Saída";
         return view('Admin.Laporan.BarangKeluar.index', $data);
     }
 

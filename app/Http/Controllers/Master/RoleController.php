@@ -13,7 +13,7 @@ class RoleController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Role";
+        $data["title"] = "Função";
         return view('Master.Role.index', $data);
     }
 

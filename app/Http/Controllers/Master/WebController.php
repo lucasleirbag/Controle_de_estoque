@@ -12,7 +12,7 @@ class WebController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Web";
+        $data["title"] = "Site";
         $data["data"] = WebModel::all();
         return view('Master.Web.index', $data);
     }
