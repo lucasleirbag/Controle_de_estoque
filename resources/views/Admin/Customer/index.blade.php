@@ -55,6 +55,7 @@
         function update(data) {
             $("input[name='idcustomerU']").val(data.customer_id);
             $("input[name='customerU']").val(data.customer_nama.replace(/_/g, ' '));
+            $("input[name='notelpU']").val(data.customer_notelp);
             $("textarea[name='alamatU']").val(data.customer_alamat.replace(/_/g, ' '));
         }
 
@@ -111,6 +112,10 @@
                     {
                         data: 'customer_nama',
                         name: 'customer_nama',
+                    },
+                    {
+                        data: 'notelp',
+                        name: 'customer_notelp',
                     },                
                     {
                         data: 'alamat',
