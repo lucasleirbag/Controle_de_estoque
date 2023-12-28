@@ -24,22 +24,22 @@ a.bg-primary:focus {
 
 button.bg-primary:hover,
 button.bg-primary:focus {
-    background-color: #3bd120 !important;
+    background-color: var(--primary-bg-color) !important;
 }
 
 /*--- gradient-backgrounds --*/
 .bg-primary-gradient {
-    background: linear-gradient(to bottom right, #3bd120 0%, #08df21 100%) !important;
+    background: linear-gradient(to bottom right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
 }
 
 a.bg-primary-gradient:hover,
 a.bg-primary-gradient:focus {
-    background-color: linear-gradient(to bottom right, #033603 0%, #77fa7b 100%) !important;
+    background-color: linear-gradient(to bottom right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
 }
 
 button.bg-primary-gradient:hover,
 button.bg-primary-gradient:focus {
-    background-color: linear-gradient(to bottom right, #033603 0%, #05b90b 100%) !important;
+    background-color: linear-gradient(to bottom right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
 }
 
 .border-primary {
@@ -356,7 +356,7 @@ a.text-primary:focus {
 }
 
 .btn.dropdown-toggle.btn-primary~.dropdown-menu .dropdown-plus-title {
-    border-color: #157003 !important;
+    border-color: #6c5ffc !important;
 }
 
 .alert-primary {
@@ -370,7 +370,7 @@ a.text-primary:focus {
 }
 
 .alert-primary .alert-link {
-    color: #01720b;
+    color: #1200d7;
 }
 
 .list-group-item-primary {
@@ -429,7 +429,7 @@ a.text-primary:focus {
 
 .login-img::before {
     content: "";
-    background: linear-gradient(to right, #033603 0%, #27d343ae 100%);
+    background: linear-gradient(to right, var(--primary06) 0%, #05c3fb91 100%);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -713,7 +713,7 @@ div.conv-form-wrapper div#messages div.message.from {
 
 .fc-toolbar .fc-state-active,
 .fc-toolbar .ui-state-active {
-    background: #3bd120;
+    background: #6155e2;
 }
 
 /*-- Sidemenu --*/
@@ -800,7 +800,7 @@ div.conv-form-wrapper div#messages div.message.from {
 .light-menu.dark-mode .side-menu__item.active,
 .light-menu.dark-mode .side-menu__item:hover,
 .light-menu.dark-mode .side-menu__item:focus {
-    color: #1fcd5c;
+    color: #8061ce;
 }
 
 .light-menu .side-menu__item:hover .side-menu__icon,
@@ -834,7 +834,7 @@ div.conv-form-wrapper div#messages div.message.from {
 .dark-menu .side-menu__item:focus .side-menu__icon,
 .dark-menu .side-menu__item.active,
 .dark-menu .side-menu__item:hover {
-    color: #36c14f;
+    color: #5b8bf1;
 }
 
 .color-menu .app-sidebar {
