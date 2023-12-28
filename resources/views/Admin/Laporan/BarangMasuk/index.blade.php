@@ -88,7 +88,7 @@
             "stateSave": true,
             "lengthMenu": [
                 [5, 10, 25, 50, 100, -1],
-                [5, 10, 25, 50, 100, 'Semua']
+                [5, 10, 25, 50, 100, 'Todos']
             ],
             "pageLength": 10,
 

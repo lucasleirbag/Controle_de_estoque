@@ -64,7 +64,7 @@
 
     function hapus(data) {
         $("input[name='iduser']").val(data.user_id);
-        $("#vuser").html("user " + "<b>" + data.user_nama + "</b>");
+        $("#vuser").html("usuário " + "<b>" + data.user_nama + "</b>");
     }
 
     function validasi(judul, status) {

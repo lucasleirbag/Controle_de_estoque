@@ -29,7 +29,7 @@
                     <table id="table-1" width="100%" class="table table-bordered text-nowrap border-bottom dataTable no-footer dtr-inline collapsed">
                         <thead>
                             <th class="border-bottom-0" width="1%">No</th>
-                            <th class="border-bottom-0">Usuário</th>
+                            <th class="border-bottom-0">Função</th>
                             <th class="border-bottom-0">Slug</th>
                             <th class="border-bottom-0">Descrição</th>
                             <th class="border-bottom-0" width="1%">Ação</th>
@@ -56,7 +56,7 @@
 
     function hapus(data) {
         $("input[name='idrole']").val(data.role_id);
-        $("#vrole").html("role "+"<b>"+data.role_title+"</b>");
+        $("#vrole").html("Função "+"<b>"+data.role_title+"</b>");
     }
 
     function validasi(judul, status) {

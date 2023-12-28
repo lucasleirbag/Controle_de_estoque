@@ -20,17 +20,17 @@
                 <div class="panel-body tabs-menu-body p-0 pt-5">
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab5">
-                            <div class="wrap-input100 validate-input input-group" data-bs-validate="Valid username is required">
+                            <div class="wrap-input100 validate-input input-group" data-bs-validate="É necessário um nome de usuário válido">
                                 <a tabindex="-1" href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                     <i class="zmdi zmdi-account text-muted ms-1" aria-hidden="true"></i>
                                 </a>
-                                <input name="user" value="{{Session::get('userInput')}}" class="input100 border-start-0 form-control ms-0" type="text" placeholder="Username" autocomplete="off">
+                                <input name="user" value="{{Session::get('userInput')}}" class="input100 border-start-0 form-control ms-0" type="text" placeholder="Usuário" autocomplete="off">
                             </div>
                             <div class="wrap-input100 validate-input input-group" id="Password-toggle">
                                 <a tabindex="-1" href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                     <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
                                 </a>
-                                <input name="pwd" class="input100 border-start-0 form-control ms-0" type="password" placeholder="Password" autocomplete="off">
+                                <input name="pwd" class="input100 border-start-0 form-control ms-0" type="password" placeholder="Senha" autocomplete="off">
                             </div>
                             <!-- <div class="text-end pt-4">
                                 <p class="mb-0"><a href="forgot-password.html" class="text-primary ms-1">Forgot Password?</a></p>
@@ -62,11 +62,11 @@
         setLoading(true);
 
         if (usr == "") {
-            validasi('Username masih kosong!', 'warning');
+            validasi('Preencha o nome do usuário!', 'warning');
             setLoading(false);
             return false;
         } else if (pwd == '') {
-            validasi('Password masih kosong!', 'warning');
+            validasi('Preencha o campo senha!', 'warning');
             setLoading(false);
             return false;
         }
