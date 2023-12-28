@@ -101,7 +101,7 @@
             setLoadingU(false);
             return false;
         }else if (stok == "") {
-            validasi('Stok Awal wajib di isi!', 'warning');
+            validasi('Estoque inicial deve ser preenchido!', 'warning');
             $("input[name='stok']").addClass('is-invalid');
             setLoadingU(false);
             return false;
