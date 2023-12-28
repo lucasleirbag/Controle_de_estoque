@@ -869,7 +869,7 @@
         }
         .side-menu__item.active:hover,
         .side-menu__item.active:focus {
-            background: linear-gradient(to right, $primary-1 0%, #8e77fa 100%) !important;
+            background: linear-gradient(to right, $primary-1 0%, #05b53d 100%) !important;
         }
         .side-menu__item:hover .side-menu__label,
         .side-menu__item:hover .side-menu__icon,
@@ -1244,7 +1244,7 @@
 
 .gradient-menu {
     .app-sidebar {
-        background: linear-gradient(to bottom, $primary-1 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom, $primary-1 0%, #11d221 100%) !important;
         .side-item.side-item-category {
             color: $white;
             opacity: 0.3;
@@ -1321,10 +1321,10 @@
         border-bottom-color: $border-dark !important;
     }
     &.hover-submenu.sidebar-mini.sidenav-toggled .slide-menu {
-        background: linear-gradient(to bottom, $primary-1 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom, $primary-1 0%, #14a214 100%) !important;
     }
     &.hover-submenu1.sidebar-mini.sidenav-toggled .slide-menu {
-        background: linear-gradient(to bottom, $primary-1 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom, $primary-1 0%, #5eab0d 100%) !important;
     }
 }
 
@@ -1377,7 +1377,7 @@
         &.horizontal .horizontal-main .slide .slide-menu,
         &.horizontal .horizontal-main .slide .sub-slide-menu,
         &.horizontal .horizontal-main .slide .sub-slide-menu2 {
-            background: linear-gradient(to bottom, $primary-1 0%, #8e77fa 100%);
+            background: linear-gradient(to bottom, $primary-1 0%, #1d8409 100%);
             border-color: $border-dark;
         }
     }
@@ -1385,7 +1385,7 @@
 
 .dark-mode.gradient-menu {
     .app-sidebar {
-        background: linear-gradient(to bottom, $primary-1 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom, $primary-1 0%, #0f9003 100%) !important;
         .side-menu .slide a {
             color: $white;
             opacity: 0.7;
@@ -1435,7 +1435,7 @@
 /*---------- Horizontalmenu-styles ----------*/
 
 .dark-mode.gradient-header .mobile-header {
-    border-bottom: 1px solid rgb(100, 76, 252) !important;
+    border-bottom: 1px solid rgb(4, 113, 4) !important;
 }
 
 .dark-mode {
@@ -1802,7 +1802,7 @@
 }
 
 .gradient-header .mobile-header.hor-mobile-header {
-    background: linear-gradient(to right, $primary-1 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right, $primary-1 0%, #0dae02 100%) !important;
 }
 
 @media (max-width: 991px) {
@@ -2313,13 +2313,13 @@
     //Transparent gradient-menu
     &.gradient-menu {
         .side-menu {
-            background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+            background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #026e04 100%) !important;
         }
         .app-sidebar {
-            background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+            background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #028302 100%) !important;
         }
         &.sidenav-toggled.sidenav-toggled-open .app-sidebar {
-            background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+            background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #0ad603 100%) !important;
         }
         &.hover-submenu.sidebar-mini.sidenav-toggled.sidenav-toggled-open .slide-menu {
             background: $dark-theme-1;
@@ -2521,13 +2521,13 @@
         //Transparent gradient-menu
         &.gradient-menu {
             .side-menu {
-                background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+                background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #028025 100%) !important;
             }
             .app-sidebar {
-                background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+                background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #04c104 100%) !important;
             }
             &.sidenav-toggled.sidenav-toggled-open .app-sidebar {
-                background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+                background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #1e6504 100%) !important;
             }
             &.hover-submenu.sidebar-mini.sidenav-toggled.sidenav-toggled-open .slide-menu {
                 background: $dark-theme-1;
@@ -2642,7 +2642,7 @@
         display: block !important;
     }
     .gradient-header .responsive-navbar .navbar-collapse {
-        background: linear-gradient(to right, $primary-1 0%, #8e77fa 100%);
+        background: linear-gradient(to right, $primary-1 0%, #095f03 100%);
     }
     .dark-mode.header-light .responsive-navbar .navbar-collapse {
         background-color: $white;

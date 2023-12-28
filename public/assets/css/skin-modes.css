@@ -374,7 +374,7 @@
 }
 
 .dark-mode.header-light .app-sidebar__toggle a {
-    color: #555b95;
+    color: #04ab07;
 }
 
 @media (max-width: 575.98px) {
@@ -440,7 +440,7 @@
 
 .gradient-header .app-header,
 .gradient-header .hor-header {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right, var(--primary-bg-color) 0%, #31dc0e 100%) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -617,7 +617,7 @@
 
 .dark-mode.gradient-header .app-header,
 .dark-mode.gradient-header .hor-header {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right, var(--primary-bg-color) 0%, #06d439 100%) !important;
 }
 
 .dark-mode.gradient-header .header .form-inline .form-control {
@@ -648,7 +648,7 @@
 }
 
 .light-menu .app-sidebar .app-sidebar__user .user-info h5 {
-    color: #263871;
+    color: #206002;
 }
 
 .light-menu .app-sidebar .Annoucement_card {
@@ -844,7 +844,7 @@
 
 .color-menu .app-sidebar .side-header .side-menu__item.active:hover,
 .color-menu .app-sidebar .side-header .side-menu__item.active:focus {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right, var(--primary-bg-color) 0%, #05b820 100%) !important;
 }
 
 .color-menu .app-sidebar .side-header .side-menu__item:hover .side-menu__label,
@@ -1214,7 +1214,7 @@
 
 /*Graident-Color*/
 .gradient-menu .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #017318 100%) !important;
 }
 
 .gradient-menu .app-sidebar .side-item.side-item-category {
@@ -1312,11 +1312,11 @@
 }
 
 .gradient-menu.hover-submenu.sidebar-mini.sidenav-toggled .slide-menu {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #31b306 100%) !important;
 }
 
 .gradient-menu.hover-submenu1.sidebar-mini.sidenav-toggled .slide-menu {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #03ba2b 100%) !important;
 }
 
 @media (min-width: 992px) {
@@ -1364,13 +1364,13 @@
     .gradient-menu.horizontal .horizontal-main .slide .slide-menu,
     .gradient-menu.horizontal .horizontal-main .slide .sub-slide-menu,
     .gradient-menu.horizontal .horizontal-main .slide .sub-slide-menu2 {
-        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%);
+        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #038d05 100%);
         border-color: rgba(255, 255, 255, 0.1);
     }
 }
 
 .dark-mode.gradient-menu .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #07c007 100%) !important;
 }
 
 .dark-mode.gradient-menu .app-sidebar .side-menu .slide a {
@@ -1422,7 +1422,7 @@
 
 /*---------- Horizontalmenu-styles ----------*/
 .dark-mode.gradient-header .mobile-header {
-    border-bottom: 1px solid #644cfc !important;
+    border-bottom: 1px solid #198002 !important;
 }
 
 .dark-mode.color-header.gradient-menu .app-sidebar {
@@ -1771,7 +1771,7 @@
 }
 
 .gradient-header .mobile-header.hor-mobile-header {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right, var(--primary-bg-color) 0%, #15e212 100%) !important;
 }
 
 @media (max-width: 991px) {
@@ -2297,15 +2297,15 @@
 }
 
 .transparent-mode.gradient-menu .side-menu {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #35d21a 100%) !important;
 }
 
 .transparent-mode.gradient-menu .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #05902f 100%) !important;
 }
 
 .transparent-mode.gradient-menu.sidenav-toggled.sidenav-toggled-open .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #026b1b 100%) !important;
 }
 
 .transparent-mode.gradient-menu.hover-submenu.sidebar-mini.sidenav-toggled.sidenav-toggled-open .slide-menu {
@@ -2519,15 +2519,15 @@
     }
 
     .transparent-mode.gradient-menu .side-menu {
-        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #35dc07 100%) !important;
     }
 
     .transparent-mode.gradient-menu .app-sidebar {
-        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #058009 100%) !important;
     }
 
     .transparent-mode.gradient-menu.sidenav-toggled.sidenav-toggled-open .app-sidebar {
-        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #1f8603 100%) !important;
     }
 
     .transparent-mode.gradient-menu.hover-submenu.sidebar-mini.sidenav-toggled.sidenav-toggled-open .slide-menu {
@@ -2628,7 +2628,7 @@
     }
 
     .gradient-header .responsive-navbar .navbar-collapse {
-        background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%);
+        background: linear-gradient(to right, var(--primary-bg-color) 0%, #4ee019 100%);
     }
 
     .dark-mode.header-light .responsive-navbar .navbar-collapse {

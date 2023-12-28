@@ -645,13 +645,13 @@ div.conv-form-wrapper div#messages div.message.from {
 
 @media (max-width: 767.98px) and (min-width: 576px) {
     .search-show .search-element {
-        background-image: linear-gradient(to bottom right, var(--primary-bg-color) 0%, #8e77fa 100%);
+        background-image: linear-gradient(to bottom right, var(--primary-bg-color) 0%, #036c18 100%);
     }
 }
 
 @media (max-width: 575.98px) {
     .search-show .search-element {
-        background-image: linear-gradient(to bottom right, var(--primary-bg-color) 0%, #8e77fa 100%);
+        background-image: linear-gradient(to bottom right, var(--primary-bg-color) 0%, #036c18 100%);
     }
 }
 

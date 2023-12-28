@@ -1037,7 +1037,7 @@ body.transparent-mode *:hover::-webkit-scrollbar-thumb {
 }
 
 .transparent-mode .nav-tabs .nav-submenu .nav-item1.active {
-    color: #467fcf;
+    color: #0a830e;
 }
 
 .transparent-mode .nav-tabs .nav-submenu .nav-item1:hover {
@@ -1123,11 +1123,11 @@ body.transparent-mode *:hover::-webkit-scrollbar-thumb {
 }
 
 .transparent-mode .panel-title-landing {
-    color: #1643a3 !important;
+    color: #078e12 !important;
 }
 
 .transparent-mode .panel-footer-landing {
-    border: solid 2px #1643a3 !important;
+    border: solid 2px #16a324 !important;
     border-top: none !important;
     background: #f7f7f7;
 }
@@ -1748,12 +1748,12 @@ body.transparent-mode *:hover::-webkit-scrollbar-thumb {
 
 .transparent-mode .popover-head-secondary .popover-header {
     color: #fff;
-    background-color: #05c3fb !important;
+    background-color: #09a104 !important;
 }
 
 .transparent-mode .popover-head-secondary.bs-popover-bottom .popover-arrow::after,
 .transparent-mode .popover-head-secondary.bs-popover-auto[data-popper-placement^=bottom] .popover-arrow::after {
-    border-bottom-color: #05c3fb !important;
+    border-bottom-color: #09a104 !important;
 }
 
 .transparent-mode .popover-head-primary .popover-body,
