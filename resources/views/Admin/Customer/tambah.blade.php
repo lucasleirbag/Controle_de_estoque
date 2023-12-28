@@ -12,10 +12,6 @@
                     <input type="text" name="customer" class="form-control" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="notelp" class="form-label">Telefone</label>
-                    <input type="text" name="notelp" class="form-control" placeholder="">
-                </div>
-                <div class="form-group">
                     <label for="alamat" class="form-label">Endereço</label>
                     <textarea name="alamat" class="form-control" rows="4"></textarea>
                 </div>
@@ -55,7 +51,6 @@
 
         function submitForm() {
             const customer = $("input[name='customer']").val();
-            const notelp = $("input[name='notelp']").val();
             const alamat = $("textarea[name='alamat']").val();
 
             $.ajax({
@@ -64,7 +59,6 @@
                 enctype: 'multipart/form-data',
                 data: {
                     customer: customer,
-                    notelp: notelp,
                     alamat: alamat
                 },
                 success: function(data) {
@@ -87,7 +81,6 @@
         function reset() {
             resetValid();
             $("input[name='customer']").val('');
-            $("input[name='notelp']").val('');
             $("textarea[name='ket']").val('');
             setLoading(false);
         }

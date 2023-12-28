@@ -55,13 +55,12 @@
         function update(data) {
             $("input[name='idcustomerU']").val(data.customer_id);
             $("input[name='customerU']").val(data.customer_nama.replace(/_/g, ' '));
-            $("input[name='notelpU']").val(data.customer_notelp);
             $("textarea[name='alamatU']").val(data.customer_alamat.replace(/_/g, ' '));
         }
 
         function hapus(data) {
             $("input[name='idcustomer']").val(data.customer_id);
-            $("#vcustomer").html("customer " + "<b>" + data.customer_nama.replace(/_/g, ' ') + "</b>");
+            $("#vcustomer").html("local " + "<b>" + data.customer_nama.replace(/_/g, ' ') + "</b>");
         }
 
         function validasi(judul, status) {
@@ -112,11 +111,7 @@
                     {
                         data: 'customer_nama',
                         name: 'customer_nama',
-                    },
-                    {
-                        data: 'notelp',
-                        name: 'customer_notelp',
-                    },                
+                    },               
                     {
                         data: 'alamat',
                         name: 'customer_alamat',

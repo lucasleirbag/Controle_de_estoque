@@ -24,11 +24,6 @@ class CustomerController extends Controller
             $data = CustomerModel::orderBy('customer_id', 'DESC')->get();
             return DataTables::of($data)
                 ->addIndexColumn()
-                ->addColumn('notelp', function ($row) {
-                    $notelp = $row->customer_notelp == '' ? '-' : $row->customer_notelp;
-
-                    return $notelp;
-                })
                 ->addColumn('alamat', function ($row) {
                     $alamat = $row->customer_alamat == '' ? '-' : $row->customer_alamat;
 
@@ -39,7 +34,7 @@ class CustomerController extends Controller
                         "customer_id" => $row->customer_id,
                         "customer_nama" => trim(preg_replace('/[^A-Za-z0-9-]+/', '_', $row->customer_nama)),
                         "customer_alamat" => trim(preg_replace('/[^A-Za-z0-9-]+/', '_', $row->customer_alamat)),
-                        "customer_notelp" => $row->customer_notelp
+            
                     );
                     $button = '';
                     $hakEdit = AksesModel::leftJoin('tbl_menu', 'tbl_menu.menu_id', '=', 'tbl_akses.menu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_menu.menu_judul' => 'Local', 'tbl_akses.akses_type' => 'update'))->count();
@@ -68,7 +63,7 @@ class CustomerController extends Controller
                     }
                     return $button;
                 })
-                ->rawColumns(['action', 'notelp', 'alamat'])->make(true);
+                ->rawColumns(['action','alamat'])->make(true);
         }
     }
 
@@ -80,7 +75,6 @@ class CustomerController extends Controller
         CustomerModel::create([
             'customer_nama' => $request->customer,
             'customer_slug' => $slug,
-            'customer_notelp'   => $request->notelp,
             'customer_alamat'   => $request->alamat,
         ]);
 
@@ -95,7 +89,6 @@ class CustomerController extends Controller
         $customer->update([
             'customer_nama' => $request->customer,
             'customer_slug' => $slug,
-            'customer_notelp'   => $request->notelp,
             'customer_alamat'   => $request->alamat,
         ]);
 

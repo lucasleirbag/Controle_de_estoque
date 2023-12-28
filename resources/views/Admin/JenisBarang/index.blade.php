@@ -59,7 +59,7 @@
 
         function hapus(data) {
             $("input[name='idjenisbarang']").val(data.jenisbarang_id);
-            $("#vjenisbarang").html("jenis " + "<b>" + data.jenisbarang_nama.replace(/_/g, ' ') + "</b>");
+            $("#vjenisbarang").html("tipo " + "<b>" + data.jenisbarang_nama.replace(/_/g, ' ') + "</b>");
         }
 
         function validasi(judul, status) {

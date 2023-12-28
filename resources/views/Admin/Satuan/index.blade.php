@@ -60,7 +60,7 @@
 
         function hapus(data) {
             $("input[name='idsatuan']").val(data.satuan_id);
-            $("#vsatuan").html("satuan " + "<b>" + data.satuan_nama.replace(/_/g, ' ') + "</b>");
+            $("#vsatuan").html("unidade " + "<b>" + data.satuan_nama.replace(/_/g, ' ') + "</b>");
         }
 
         function validasi(judul, status) {

@@ -77,7 +77,7 @@
 
     function hapus(data) {
         $("input[name='idbm']").val(data.bm_id);
-        $("#vbm").html("Kode BM " + "<b>" + data.bm_kode + "</b>");
+        $("#vbm").html("Código de entrada " + "<b>" + data.bm_kode + "</b>");
     }
 
     function validasi(judul, status) {

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('customer_nama');
             $table->string('customer_slug');
             $table->text('customer_alamat')->nullable();
-            $table->string('customer_notelp')->nullable();
             $table->timestamps();
         });
     }

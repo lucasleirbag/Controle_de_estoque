@@ -12,10 +12,6 @@
                     <input type="text" name="customerU" class="form-control" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="notelpU" class="form-label">Telefone</label>
-                    <input type="text" name="notelpU" class="form-control" placeholder="">
-                </div>
-                <div class="form-group">
                     <label for="alamatU" class="form-label">Endereço</label>
                     <textarea name="alamatU" class="form-control" rows="4"></textarea>
                 </div>
@@ -52,7 +48,6 @@
     function submitFormU() {
         const id = $("input[name='idcustomerU']").val();
         const customer = $("input[name='customerU']").val();
-        const notelp = $("input[name='notelpU']").val();
         const alamat = $("textarea[name='alamatU']").val();
 
         $.ajax({
@@ -61,7 +56,6 @@
             enctype: 'multipart/form-data',
             data: {
                 customer: customer,
-                notelp: notelp,
                 alamat: alamat
             },
             success: function(data) {
@@ -78,7 +72,6 @@
 
     function resetValidU() {
         $("input[name='customerU']").removeClass('is-invalid');
-        $("input[name='notelpU']").removeClass('is-invalid');
         $("textarea[name='alamatU']").removeClass('is-invalid');
     };
 
@@ -86,7 +79,6 @@
         resetValidU();
         $("input[name='idcustomerU']").val('');
         $("input[name='customerU']").val('');
-        $("input[name='notelpU']").val('');
         $("textarea[name='alamatU']").val('');
         setLoadingU(false);
     }

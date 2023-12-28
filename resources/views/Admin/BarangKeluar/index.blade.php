@@ -79,7 +79,7 @@
 
         function hapus(data) {
             $("input[name='idbk']").val(data.bk_id);
-            $("#vbk").html("Kode BK " + "<b>" + data.bk_kode + "</b>");
+            $("#vbk").html("Código saída de produto " + "<b>" + data.bk_kode + "</b>");
         }
 
         function validasi(judul, status) {

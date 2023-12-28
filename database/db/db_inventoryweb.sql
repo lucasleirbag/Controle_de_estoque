@@ -522,7 +522,6 @@ CREATE TABLE `tbl_customer` (
   `customer_nama` varchar(255) NOT NULL,
   `customer_slug` varchar(255) NOT NULL,
   `customer_alamat` text DEFAULT NULL,
-  `customer_notelp` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`customer_id`)
@@ -530,8 +529,8 @@ CREATE TABLE `tbl_customer` (
 
 /*Data for the table `tbl_customer` */
 
-insert  into `tbl_customer`(`customer_id`,`customer_nama`,`customer_slug`,`customer_alamat`,`customer_notelp`,`created_at`,`updated_at`) values 
-(2,'Radhian Sobarna','radhian-sobarna','Sumedang','087817379229','2022-11-26 01:36:34','2022-11-26 01:43:58');
+insert  into `tbl_customer`(`customer_id`,`customer_nama`,`customer_slug`,`customer_alamat`,`created_at`,`updated_at`) values 
+(2,'Radhian Sobarna','radhian-sobarna','Sumedang','2022-11-26 01:36:34','2022-11-26 01:43:58');
 
 /*Table structure for table `tbl_jenisbarang` */
 

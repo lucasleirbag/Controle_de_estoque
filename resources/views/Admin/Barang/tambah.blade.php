@@ -17,7 +17,7 @@
                             <input type="text" name="nama" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="jenisbarang" class="form-label">Local</label>
+                            <label for="jenisbarang" class="form-label">Tipo</label>
                             <select name="jenisbarang" class="form-control">
                                 <option value="">-- Selecionar --</option>
                                 @foreach ($jenisbarang as $jb)

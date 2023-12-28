@@ -14,6 +14,5 @@ class CustomerModel extends Model
         'customer_nama',
         'customer_slug',
         'customer_alamat',
-        'customer_notelp',
     ]; 
 }
