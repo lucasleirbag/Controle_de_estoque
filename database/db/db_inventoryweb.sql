@@ -664,7 +664,7 @@ CREATE TABLE `tbl_submenu` (
 insert  into `tbl_submenu`(`submenu_id`,`menu_id`,`submenu_judul`,`submenu_slug`,`submenu_redirect`,`submenu_sort`,`created_at`,`updated_at`) values 
 (9,'1668510437','Entrada de Produtos','entrada-produtos','/barang-masuk','1','2022-11-15 11:08:19','2022-11-15 11:08:19'),
 (10,'1668510437','Saída de Produtos','saída-produtos','/barang-keluar','2','2022-11-15 11:08:19','2022-11-15 11:08:19'),
-(17,'1668509889','Local','local','/jenisbarang','1','2022-11-24 12:06:48','2022-11-24 12:06:48'),
+(17,'1668509889','Tipo','tipo','/jenisbarang','1','2022-11-24 12:06:48','2022-11-24 12:06:48'),
 (18,'1668509889','Unidade','unidade','/satuan','2','2022-11-24 12:06:48','2022-11-24 12:06:48'),
 (19,'1668509889','Marca','marca','/merk','3','2022-11-24 12:06:48','2022-11-24 12:06:48'),
 (20,'1668509889','Produtos','produtos','/barang','4','2022-11-24 12:06:48','2022-11-24 12:06:48'),
