@@ -156,9 +156,9 @@ License        :   Licensed under ThemeForest License
 /*Transparent variables*/
 /* ###### Bootstrap ###### */
 :root {
-    --primary-bg-color: #6c5ffc;
-    --primary-bg-hover: #233ac5;
-    --primary-bg-border: #5161c1;
+    --primary-bg-color: #007211;
+    --primary-bg-hover: #12b739;
+    --primary-bg-border: #75c151;
     --dark-body: #292e4a;
     --dark-border: #30314e;
     --dark-primary: #6c5ffc;

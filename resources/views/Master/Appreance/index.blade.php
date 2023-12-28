@@ -138,7 +138,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Azul Claro
+                                        Verde
                                     </div>
                                 </span>
                             </label>
@@ -209,7 +209,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Azul Claro
+                                        Verde
                                     </div>
                                 </span>
                             </label>
