@@ -21,7 +21,7 @@
                 <div class="d-flex">
                     <div class="text-white">
                         <h2 class="mb-0 number-font">{{$jenis}}</h2>
-                        <p class="text-white mb-0">Local</p>
+                        <p class="text-white mb-0">Tipos</p>
                     </div>
                     <div class="ms-auto"> <i class="fe fe-package text-white fs-40 me-2 mt-2"></i> </div>
                 </div>
@@ -105,7 +105,7 @@
                 <div class="d-flex">
                     <div class="text-white">
                         <h2 class="mb-0 number-font">{{$customer}}</h2>
-                        <p class="text-white mb-0">Local</p>
+                        <p class="text-white mb-0">Locais</p>
                     </div>
                     <div class="ms-auto"> <i class="fe fe-user text-white fs-40 me-2 mt-2"></i> </div>
                 </div>
@@ -119,7 +119,7 @@
                 <div class="d-flex">
                     <div class="text-white">
                         <h2 class="mb-0 number-font">{{$user}}</h2>
-                        <p class="text-white mb-0">Usuário</p>
+                        <p class="text-white mb-0">Usuários</p>
                     </div>
                     <div class="ms-auto"> <i class="fe fe-user text-white fs-40 me-2 mt-2"></i> </div>
                 </div>
