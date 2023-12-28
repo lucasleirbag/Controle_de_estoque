@@ -215,13 +215,13 @@ class BarangController extends Controller
                     if ($request->get('param') == 'tambah') {
                         $button .= '
                         <div class="g-2">
-                            <a class="btn btn-primary btn-sm" href="javascript:void(0)" onclick=pilihBarang(' . json_encode($array) . ')>Pilih</a>
+                            <a class="btn btn-primary btn-sm" href="javascript:void(0)" onclick=pilihBarang(' . json_encode($array) . ')>Escolher</a>
                         </div>
                         ';
                     } else {
                         $button .= '
                     <div class="g-2">
-                        <a class="btn btn-success btn-sm" href="javascript:void(0)" onclick=pilihBarangU(' . json_encode($array) . ')>Pilih</a>
+                        <a class="btn btn-success btn-sm" href="javascript:void(0)" onclick=pilihBarangU(' . json_encode($array) . ')>Escolher</a>
                     </div>
                     ';
                     }
