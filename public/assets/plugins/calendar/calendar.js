@@ -1442,7 +1442,7 @@
 
     /**
      * Changes the month. Accepts 0-11 or a full/partial month name e.g. "Jan",
-     * "February", "Mar", etc.
+     * "Fevereiro", "Mar", etc.
      */
     Clndr.prototype.setMonth = function (newMonth, options) {
         var timeOpt = this.options.lengthOfTime,

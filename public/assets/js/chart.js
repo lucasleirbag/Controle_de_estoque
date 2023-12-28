@@ -69,7 +69,7 @@ $(function() {
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+            labels: ["Jan", "Fev", "Mar", "Apr", "Maio", "Jun", "Jul", "Aug", "Sep"],
             datasets: [{
                 label: 'Sales',
                 data: [200, 450, 290, 367, 256, 543, 345, 290, 367],
@@ -126,7 +126,7 @@ $(function() {
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+            labels: ["Jan", "Fev", "Mar", "Apr", "Maio", "Jun", "Jul"],
             datasets: [{
                 label: "Data1",
                 data: [65, 59, 80, 81, 56, 55, 40],
@@ -180,7 +180,7 @@ $(function() {
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+            labels: ["Jan", "Fev", "Mar", "Apr", "Maio", "Jun", "Jul"],
             datasets: [{
                 label: "Data1",
                 borderColor: "#6c5ffc",
@@ -236,7 +236,7 @@ $(function() {
 
     /* Pie Chart*/
     var datapie = {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+        labels: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio'],
         datasets: [{
             data: [20, 20, 30, 5, 25],
             backgroundColor: ['#6c5ffc', '#05c3fb', '#09ad95', '#1170e4', '#e82646']

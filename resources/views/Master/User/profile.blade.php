@@ -3,11 +3,11 @@
 @section('content')
 <!-- PAGE-HEADER -->
 <div class="page-header">
-    <h1 class="page-title">Profile</h1>
+    <h1 class="page-title">Perfil</h1>
     <div>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item text-gray">User</li>
-            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+            <li class="breadcrumb-item text-gray">Usuário</li>
+            <li class="breadcrumb-item active" aria-current="page">Perfil</li>
         </ol>
     </div>
 </div>
@@ -17,7 +17,7 @@
     <div class="col-xl-4">
         <div class="card">
             <div class="card-header">
-                <div class="card-title">Edit Password</div>
+                <div class="card-title">Editar Senha</div>
             </div>
             <form action="{{url('/admin/updatePassword').'/'.$data->user_id}}" method="POST" name="myFormP" enctype="multipart/form-data" onsubmit="return validatePassword()">
                 @csrf
@@ -36,35 +36,35 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Password Saat Ini</label>
+                        <label class="form-label">Senha atual</label>
                         <div class="wrap-input100 validate-input input-group" id="Password-toggle">
                             <a href="javascript:void(0)" tabindex="-1" class="input-group-text bg-white text-muted">
                                 <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
                             </a>
-                            <input class="input100 form-control" value="{{Session::get('currentpassword')}}" name="currentpassword" type="password" placeholder="Password Saat Ini">
+                            <input class="input100 form-control" value="{{Session::get('currentpassword')}}" name="currentpassword" type="password" placeholder="Senha atual">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Password Baru</label>
+                        <label class="form-label">Nova Senha</label>
                         <div class="wrap-input100 validate-input input-group" id="Password-toggle1">
                             <a href="javascript:void(0)" tabindex="-1" class="input-group-text bg-white text-muted">
                                 <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
                             </a>
-                            <input class="input100 form-control" value="{{Session::get('newpassword')}}" name="newpassword" type="password" placeholder="Password Baru">
+                            <input class="input100 form-control" value="{{Session::get('newpassword')}}" name="newpassword" type="password" placeholder="Nova Senha">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Konfirmasi Password</label>
+                        <label class="form-label">Confirme sua senha</label>
                         <div class="wrap-input100 validate-input input-group" id="Password-toggle2">
                             <a href="javascript:void(0)" tabindex="-1" class="input-group-text bg-white text-muted">
                                 <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
                             </a>
-                            <input class="input100 form-control" value="{{Session::get('confirmpassword')}}" type="password" name="confirmpassword" placeholder="Konfirmasi Password">
+                            <input class="input100 form-control" value="{{Session::get('confirmpassword')}}" type="password" name="confirmpassword" placeholder="Confirme sua senha">
                         </div>
                     </div>
                 </div>
                 <div class="card-footer text-end">
-                    <button type="submit" class="btn btn-primary">Perbarui</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
                     <a href="javascript:void(0)" onclick="resetP()" class="btn btn-danger my-1">Cancelar</a>
                 </div>
             </form>
@@ -73,18 +73,18 @@
     <div class="col-xl-8">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Edit Profile</h3>
+                <h3 class="card-title">Editar Perfil</h3>
             </div>
             <form action="{{url('/admin/updateProfile').'/'.$data->user_id}}" method="POST" name="myFormUpdate" enctype="multipart/form-data" onsubmit="return validateUpdate()">
                 @csrf
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="nmlengkap">Nama Lengkap</label>
-                        <input type="text" name="nmlengkap" value="{{$data->user_nmlengkap}}" class="form-control" id="nmlengkap" placeholder="Nama Lengkap">
+                        <label for="nmlengkap">Nome</label>
+                        <input type="text" name="nmlengkap" value="{{$data->user_nmlengkap}}" class="form-control" id="nmlengkap" placeholder="Nome">
                     </div>
                     <div class="form-group">
-                        <label for="username">Nama User</label>
-                        <input type="text" name="username" value="{{$data->user_nama}}" class="form-control" id="username" placeholder="Nama User">
+                        <label for="username">Usuário</label>
+                        <input type="text" name="username" value="{{$data->user_nama}}" class="form-control" id="username" placeholder="Usuário">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -97,7 +97,7 @@
 
                 </div>
                 <div class="card-footer text-end">
-                    <button type="submit" class="btn btn-success">Salvar Alterações</button>
+                    <button type="submit" class="btn btn-success">Salvar</button>
                     <a href="{{url('/admin/profile')}}/{{Session::get('user')->user_id}}" class="btn btn-danger my-1">Cancelar</a>
                 </div>
             </form>
@@ -118,17 +118,17 @@
         resetValidP();
 
         if (current == "") {
-            validasi('Masukan Password Saat Ini!', 'warning');
+            validasi('Digite a senha atual!', 'warning');
             $("input[name='currentpassword']").addClass('is-invalid');
             return false;
         }
         if (newp == "") {
-            validasi('Masukan Password Baru!', 'warning');
+            validasi('Insira a nova senha!', 'warning');
             $("input[name='newpassword']").addClass('is-invalid');
             return false;
         }
         if (confirm == "") {
-            validasi('Masukan Konfirmasi Password!', 'warning');
+            validasi('Digite Confirmar Senha!', 'warning');
             $("input[name='confirmpassword']").addClass('is-invalid');
             return false;
         } else if (newp !== '' || confirm !== '') {
@@ -159,7 +159,7 @@
             $("input[name='nmlengkap']").addClass('is-invalid');
             return false;
         } else if (username == "") {
-            validasi('Nama User Wajib di isi!', 'warning');
+            validasi('O nome de usuário deve ser preenchido', 'warning');
             $("input[name='username']").addClass('is-invalid');
             return false;
         } else if (email == "") {
@@ -220,14 +220,14 @@
         if (file != null) {
             var fileName = file.name;
             if (fileIsValid(fileName) == false) {
-                validasi('Format bukan gambar!', 'warning');
+                validasi('Formato de imagem não suportado!', 'warning');
                 document.getElementById('GetFile').value = null;
                 return false;
             }
             var content;
             var size = file.size;
             if ((size != null) && ((size / (1024 * 1024)) > 3)) {
-                validasi('Ukuran maximum 1024px', 'warning');
+                validasi('Tamanho máximo 1024px', 'warning');
                 document.getElementById('GetFile').value = null;
                 return false;
             }

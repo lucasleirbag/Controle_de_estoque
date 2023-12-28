@@ -1317,12 +1317,12 @@
 			if (mag === 1){
 				test = dir === -1
 					// If going back one month, make sure month is not current month
-					// (eg, Mar 31 -> Feb 31 == Feb 28, not Mar 02)
+					// (eg, Mar 31 -> Fev 31 == Fev 28, not Mar 02)
 					? function(){
 						return new_date.getUTCMonth() === month;
 					}
 					// If going forward one month, make sure month is as expected
-					// (eg, Jan 31 -> Feb 31 == Feb 28, not Mar 02)
+					// (eg, Jan 31 -> Fev 31 == Fev 28, not Mar 02)
 					: function(){
 						return new_date.getUTCMonth() !== new_month;
 					};
@@ -1334,7 +1334,7 @@
 			else {
 				// For magnitudes >1, move one month at a time...
 				for (var i=0; i < mag; i++)
-					// ...which might decrease the day (eg, Jan 31 to Feb 28, etc)...
+					// ...which might decrease the day (eg, Jan 31 to Fev 28, etc)...
 					new_date = this.moveMonth(new_date, dir);
 				// ...then reset the day, keeping it in the new month
 				new_month = new_date.getUTCMonth();
@@ -1725,8 +1725,8 @@
 			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
 			daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
-			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+			months: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+			monthsShort: ["Jan", "Fev", "Mar", "Apr", "Maio", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 			today: "Today",
 			clear: "Clear",
 			titleFormat: "MM yyyy"

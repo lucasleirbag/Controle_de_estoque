@@ -14,7 +14,7 @@ Licensed under the MIT license.
  *
  * Inspiration from jQuery color animation plugin by John Resig.
  *
- * Released under the MIT license by Ole Laursen, October 2009.
+ * Released under the MIT license by Ole Laursen, Outubro 2009.
  *
  * Examples:
  *

@@ -114,7 +114,7 @@ $(function(e) {
         "licensed": 3407,
         "sorned": 660
     }, {
-        "period": "Feb",
+        "period": "Fev",
         "licensed": 3351,
         "sorned": 629
     }, {
@@ -126,15 +126,15 @@ $(function(e) {
         "licensed": 3246,
         "sorned": 661
     }, {
-        "period": "May",
+        "period": "Maio",
         "licensed": 3257,
         "sorned": 667
     }, {
-        "period": "June",
+        "period": "Junho",
         "licensed": 3248,
         "sorned": 627
     }, {
-        "period": "July",
+        "period": "Julho",
         "licensed": 3171,
         "sorned": 660
     }, {

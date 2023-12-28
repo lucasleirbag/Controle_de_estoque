@@ -61945,7 +61945,7 @@ function mergeAndNormalizeLayoutParams$1(target, raw) {
 
 var MONTH_TEXT = {
     EN: [
-        'Jan', 'Feb', 'Mar',
+        'Jan', 'Fev', 'Mar',
         'Apr', 'May', 'Jun',
         'Jul', 'Aug', 'Sep',
         'Oct', 'Nov', 'Dec'

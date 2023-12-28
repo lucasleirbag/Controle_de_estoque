@@ -532,7 +532,7 @@ nv.models.tooltip = function() {
     Example Format of data:
     {
         key: "Date",
-        value: "August 2009",
+        value: "Agosto 2009",
         series: [
             {key: "Series 1", value: "Value 1", color: "#000"},
             {key: "Series 2", value: "Value 2", color: "#00f"}

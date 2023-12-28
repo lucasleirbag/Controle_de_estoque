@@ -1,5 +1,5 @@
 /**!
- * lg-hash.js | 1.0.0 | October 5th 2016
+ * lg-hash.js | 1.0.0 | Outubro 5th 2016
  * http://sachinchoolur.github.io/lg-hash.js
  * Copyright (c) 2016 Sachin N; 
  * @license GPLv3 

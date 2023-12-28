@@ -534,7 +534,7 @@ function index() {
 
         type: 'line',
         data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            labels: ["Jan", "Fev", "Mar", "Apr", "Maio", "Junho", "Julho", "Aug", "Sep", "Oct", "Nov", "Dec"],
             type: 'line',
             datasets: [{
                 label: 'Total Sales',

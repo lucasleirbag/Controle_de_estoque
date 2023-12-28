@@ -285,7 +285,7 @@ $appreance = AppreanceModel::where('user_id', '=', Session::get('user')->user_id
     $(document).ready(function() {
         // BOOTSTRAP DATEPICKER
         $('.datepicker-date').bootstrapdatepicker({
-            format: "yyyy-mm-dd",
+            format: "dd-mm-yyyy",
             viewMode: "date",
             autoclose: true,
         })

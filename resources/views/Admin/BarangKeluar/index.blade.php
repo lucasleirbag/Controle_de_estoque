@@ -72,7 +72,7 @@
             getbarangbyidU(data.barang_kode);
 
             $("input[name='tglkeluarU").bootstrapdatepicker({
-                format: 'yyyy-mm-dd',
+                format: 'dd-mm-yyyy',
                 autoclose: true
             }).bootstrapdatepicker("update", data.bk_tanggal);
         }

@@ -90,7 +90,7 @@
             x: {
                 type: 'category',
                 // name of each category
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Junho', 'Julho', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
             },
         },
         legend: {

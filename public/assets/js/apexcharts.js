@@ -2795,22 +2795,22 @@
   const name = "en";
   const options = {
   	months: [
-  		"January",
-  		"February",
-  		"March",
-  		"April",
+  		"Janeiro",
+  		"Fevereiro",
+  		"Março",
+  		"Abril",
   		"May",
-  		"June",
-  		"July",
-  		"August",
-  		"September",
-  		"October",
-  		"November",
-  		"December"
+  		"Junho",
+  		"Julho",
+  		"Agosto",
+  		"Setembro",
+  		"Outubro",
+  		"Novembro",
+  		"Dezembro"
   	],
   	shortMonths: [
   		"Jan",
-  		"Feb",
+  		"Fev",
   		"Mar",
   		"Apr",
   		"May",

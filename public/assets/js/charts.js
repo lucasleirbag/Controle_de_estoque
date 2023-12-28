@@ -19,9 +19,9 @@
              },
              names: {
                  // name of each serie
-                 'data1': 'May',
-                 'data2': 'June',
-                 'data3': 'July'
+                 'data1': 'Maio',
+                 'data2': 'Junho',
+                 'data3': 'Julho'
              }
          },
          axis: {
@@ -65,7 +65,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct']
+                 categories: ['Maio', 'Junho', 'Julho', 'Aug', 'Sep', 'Oct']
              },
          },
          legend: {
@@ -101,7 +101,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct']
+                 categories: ['Maio', 'Junho', 'Julho', 'Aug', 'Sep', 'Oct']
              },
          },
          legend: {
@@ -137,7 +137,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct']
+                 categories: ['Maio', 'Junho', 'Julho', 'Aug', 'Sep', 'Oct']
              },
          },
          legend: {
@@ -176,7 +176,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun']
              },
          },
          legend: {
@@ -212,7 +212,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun', 'Jul', 'Aug', 'Sep']
              },
          },
          legend: {
@@ -249,7 +249,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct']
+                 categories: ['Maio', 'Junho', 'Julho', 'Aug', 'Sep', 'Oct']
              },
          },
          legend: {
@@ -285,7 +285,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun']
              },
              rotated: true,
          },
@@ -322,7 +322,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct']
+                 categories: ['Maio', 'Junho', 'Julho', 'Aug', 'Sep', 'Oct']
              },
          },
          legend: {
@@ -358,7 +358,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct']
+                 categories: ['Maio', 'Junho', 'Julho', 'Aug', 'Sep', 'Oct']
              },
          },
          legend: {
@@ -394,7 +394,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun']
              },
          },
          bar: {
@@ -430,7 +430,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
              },
          },
          bar: {
@@ -469,7 +469,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun']
              },
              rotated: true,
          },
@@ -512,7 +512,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
              },
          },
          bar: {
@@ -875,7 +875,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['May', 'Jun', 'July', 'Aug', 'Sep', 'Oct']
+                 categories: ['Maio', 'Jun', 'Julho', 'Aug', 'Sep', 'Oct']
              },
          },
          legend: {
@@ -967,7 +967,7 @@
              x: {
                  type: 'category',
                  // name of each category
-                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+                 categories: ['Jan', 'Fev', 'Mar', 'Apr', 'Maio', 'Jun']
              },
          },
          legend: {

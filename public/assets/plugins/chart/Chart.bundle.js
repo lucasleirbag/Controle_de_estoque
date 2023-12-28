@@ -1416,8 +1416,8 @@
 					null != a ? e[mt] = a : v(n).invalidMonth = t
 				});
 				var It = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/,
-					At = "January_February_March_April_May_June_July_August_September_October_November_December".split("_");
-				var Ft = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_");
+					At = "Janeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro".split("_");
+				var Ft = "Jan_Fev_Mar_Apr_Maio_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_");
 
 				function Rt(t, e) {
 					var n;
@@ -1756,7 +1756,7 @@
 						t._f = a + (r || "") + (o || ""), Me(t)
 					} else t._isValid = !1
 				}
-				var xe = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/;
+				var xe = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Fev|Mar|Apr|Maio|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/;
 
 				function _e(t, e, n, i, a, r) {
 					var o = [function(t) {
