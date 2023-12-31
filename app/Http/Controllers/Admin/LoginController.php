@@ -41,7 +41,7 @@ class LoginController extends Controller
             return redirect(URL::previous());
         } else {
             Session::flash('status', 'error');
-            Session::flash('msg', 'User password tidak cocok!');
+            Session::flash('msg', 'Usuário ou senha incorreta!');
             Session::flash('userInput', $request->user);
 
             //redirect to index
