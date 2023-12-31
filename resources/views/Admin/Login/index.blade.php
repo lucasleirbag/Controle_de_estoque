@@ -12,7 +12,7 @@
             @endif
         </div>
         <div class="text-center">
-            <h4 class="fw-bold mt-4 text-black text-uppercase text-truncate">{{$web->web_nama}} <span class="text-gray">| LOGIN</span></h4>
+            <h4 class="fw-bold mt-4 text-black text-uppercase text-truncate">{{$web->web_nama}} <span class="text-gray">| ESTOQUE</span></h4>
         </div>
         <form class="login100-form validate-form" method="POST" name="myForm" action="{{ url('admin/proseslogin') }}" enctype="multipart/form-data" onsubmit="return validateForm()">
             @csrf
@@ -24,13 +24,13 @@
                                 <a tabindex="-1" href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                     <i class="zmdi zmdi-account text-muted ms-1" aria-hidden="true"></i>
                                 </a>
-                                <input name="user" value="{{Session::get('userInput')}}" class="input100 border-start-0 form-control ms-0" type="text" placeholder="Username" autocomplete="off">
+                                <input name="user" value="{{Session::get('userInput')}}" class="input100 border-start-0 form-control ms-0" type="text" placeholder="Usuário" autocomplete="off">
                             </div>
                             <div class="wrap-input100 validate-input input-group" id="Password-toggle">
                                 <a tabindex="-1" href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                     <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
                                 </a>
-                                <input name="pwd" class="input100 border-start-0 form-control ms-0" type="password" placeholder="Password" autocomplete="off">
+                                <input name="pwd" class="input100 border-start-0 form-control ms-0" type="password" placeholder="Senha" autocomplete="off">
                             </div>
                             <!-- <div class="text-end pt-4">
                                 <p class="mb-0"><a href="forgot-password.html" class="text-primary ms-1">Forgot Password?</a></p>
@@ -40,7 +40,7 @@
                                     <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
                                     Loading...
                                 </button>
-                                <button type="submit" class="login100-form-btn btn btn-primary" id="btnLogin">Login</button>
+                                <button type="submit" class="login100-form-btn btn btn-primary" id="btnLogin">Entrar</button>
                             </div>
                         </div>
                     </div>
@@ -62,11 +62,11 @@
         setLoading(true);
 
         if (usr == "") {
-            validasi('Username masih kosong!', 'warning');
+            validasi('Por favor, digite seu nome de usuário.', 'warning');
             setLoading(false);
             return false;
         } else if (pwd == '') {
-            validasi('Password masih kosong!', 'warning');
+            validasi('Por favor, insira sua senha para continuar.', 'warning');
             setLoading(false);
             return false;
         }
