@@ -8,7 +8,7 @@
                     <button type="reset" aria-label="Close" class="btn-close position-absolute" data-bs-dismiss="modal"><span aria-hidden="true">×</span></button>
                     <br>
                     <i class="icon icon-exclamation fs-70 text-warning lh-1 my-5 d-inline-block"></i>
-                    <h3 class="mb-5">Tem certeza de que deseja excluir o  <span id="vrole"></span> ?</h3>
+                    <h3 class="mb-5">Quer mesmo excluir o  <span id="vrole"></span> ?</h3>
                     <input type="hidden" name="idrole" id="idrole">
                     <button class="btn btn-danger-light pd-x-25">Sim</button>
                     <button type="reset" data-bs-dismiss="modal" class="btn btn-default pd-x-25">Cancelar</button>

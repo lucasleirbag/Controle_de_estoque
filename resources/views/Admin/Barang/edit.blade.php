@@ -3,22 +3,22 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Editar Produto</h6><button onclick="resetU()" aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Editar item</h6><button onclick="resetU()" aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <input type="hidden" name="idbarangU">
                 <div class="row">
                     <div class="col-md-7">
                         <div class="form-group">
-                            <label for="kodeU" class="form-label">Código do produto <span class="text-danger">*</span></label>
+                            <label for="kodeU" class="form-label">Código do item <span class="text-danger">*</span></label>
                             <input type="text" name="kodeU" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="namaU" class="form-label">Nome do produto <span class="text-danger">*</span></label>
+                            <label for="namaU" class="form-label">Nome do item <span class="text-danger">*</span></label>
                             <input type="text" name="namaU" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="jenisbarangU" class="form-label">Tipo de produto</label>
+                            <label for="jenisbarangU" class="form-label">Tipo de item</label>
                             <select name="jenisbarangU" class="form-control">
                                 <option value="">-- Selecionar --</option>
                                 @foreach ($jenisbarang as $jb)
@@ -27,7 +27,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="satuanU" class="form-label">Unidade do Produto</label>
+                            <label for="satuanU" class="form-label">Unidade do item</label>
                             <select name="satuanU" class="form-control">
                                 <option value="">-- Selecionar --</option>
                                 @foreach ($satuan as $s)
@@ -36,7 +36,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="merkU" class="form-label">Marca do produto</label>
+                            <label for="merkU" class="form-label">Marca do item</label>
                             <select name="merkU" class="form-control">
                                 <option value="">-- Selecionar --</option>
                                 @foreach ($merk as $m)
@@ -49,7 +49,7 @@
                             <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="stokU" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="hargaU" class="form-label">Preço <span class="text-danger">*</span></label>
+                            <label for="hargaU" class="form-label">Preço do item<span class="text-danger">*</span></label>
                             <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="hargaU" class="form-control">
                         </div>
                     </div>

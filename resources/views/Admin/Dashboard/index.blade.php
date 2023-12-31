@@ -3,11 +3,11 @@
 @section('content')
 <!-- PAGE-HEADER -->
 <div class="page-header">
-    <h1 class="page-title">Gráfico</h1>
+    <h1 class="page-title">Painel</h1>
     <div>
         <ol class="breadcrumb">
             <li class="breadcrumb-item text-gray">Admin</li>
-            <li class="breadcrumb-item active" aria-current="page">Gráfico</li>
+            <li class="breadcrumb-item active" aria-current="page">Painel</li>
         </ol>
     </div>
 </div>
@@ -105,7 +105,7 @@
                 <div class="d-flex">
                     <div class="text-white">
                         <h2 class="mb-0 number-font">{{$customer}}</h2>
-                        <p class="text-white mb-0">Cliente</p>
+                        <p class="text-white mb-0">Local</p>
                     </div>
                     <div class="ms-auto"> <i class="fe fe-user text-white fs-40 me-2 mt-2"></i> </div>
                 </div>

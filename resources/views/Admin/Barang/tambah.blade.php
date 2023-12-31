@@ -3,21 +3,21 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content modal-content-demo">
             <div class="modal-header">
-                <h6 class="modal-title">Adicionar Produto</h6><button onclick="reset()" aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Adicionar Item</h6><button onclick="reset()" aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-7">
                         <div class="form-group">
-                            <label for="kode" class="form-label">Código do produto <span class="text-danger">*</span></label>
+                            <label for="kode" class="form-label">Código do Item<span class="text-danger">*</span></label>
                             <input type="text" name="kode" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="nama" class="form-label">Nome do produto <span class="text-danger">*</span></label>
+                            <label for="nama" class="form-label">Nome do item<span class="text-danger">*</span></label>
                             <input type="text" name="nama" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="jenisbarang" class="form-label">Tipo de produto</label>
+                            <label for="jenisbarang" class="form-label">Tipo de item</label>
                             <select name="jenisbarang" class="form-control">
                                 <option value="">-- Selecionar --</option>
                                 @foreach ($jenisbarang as $jb)
@@ -44,7 +44,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="harga" class="form-label">Preço do produto <span class="text-danger">*</span></label>
+                            <label for="stokU" class="form-label">Estoque Inicial <span class="text-danger">*</span></label>
+                            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="stokU" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="harga" class="form-label">Preço do item<span class="text-danger">*</span></label>
                             <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="harga" class="form-control">
                         </div>
                     </div>
@@ -77,26 +81,33 @@
         const kode = $("input[name='kode']").val();
         const nama = $("input[name='nama']").val();
         const harga = $("input[name='harga']").val();
+        const stok = $("input[name='stokU']").val();
         setLoading(true);
         resetValid();
         if (kode == "") {
-            validasi('Kode Barang wajib di isi!', 'warning');
+            validasi('O campo "Código do Produto" é obrigatório!', 'warning');
             $("input[name='kode']").addClass('is-invalid');
             setLoading(false);
             return false;
         } else if (nama == "") {
-            validasi('Nama Barang wajib di isi!', 'warning');
+            validasi('O campo "Nome do Produto" é obrigatório!', 'warning');
             $("input[name='nama']").addClass('is-invalid');
             setLoading(false);
             return false;
         } else if (harga == "") {
-            validasi('Harga Barang wajib di isi!', 'warning');
+            validasi('O campo "Preço do Produto" é obrigatório!', 'warning');
             $("input[name='harga']").addClass('is-invalid');
             setLoading(false);
+            return false;
+        } else if (stok == "") {
+            validasi('O campo "Estoque Inicial" é obrigatório!', 'warning');
+            $("input[name='stok']").addClass('is-invalid');
+            setLoadingU(false);
             return false;
         } else {
             submitForm();
         }
+
     }
     function submitForm() {
         const kode = $("input[name='kode']").val();
@@ -105,6 +116,7 @@
         const satuan = $("select[name='satuan']").val();
         const merk = $("select[name='merk']").val();
         const harga = $("input[name='harga']").val();
+        const stok = $("input[name='stokU']").val();
         const foto = $('#GetFile')[0].files;
         var fd = new FormData();
         // Append data 
@@ -115,6 +127,7 @@
         fd.append('satuan', satuan);
         fd.append('merk', merk);
         fd.append('harga', harga);
+        fd.append('stok', stok);
         $.ajax({
             type: 'POST',
             url: "{{route('barang.store')}}",
@@ -140,6 +153,7 @@
         $("select[name='satuan']").removeClass('is-invalid');
         $("select[name='merk']").removeClass('is-invalid');
         $("input[name='harga']").removeClass('is-invalid');
+        $("input[name='stok']").removeClass('');
     };
     function reset() {
         resetValid();
@@ -149,6 +163,7 @@
         $("select[name='satuan']").val('');
         $("select[name='merk']").val('');
         $("input[name='harga']").val('');
+        $("input[name='stok']").val('');
         $("#outputImg").attr("src", "{{url('/assets/default/barang/image.png')}}");
         $("#GetFile").val('');
         setLoading(false);

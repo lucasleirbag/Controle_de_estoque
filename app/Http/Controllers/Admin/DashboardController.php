@@ -18,7 +18,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Gráfico";
+        $data["title"] = "Painel";
         $data["jenis"] = JenisBarangModel::orderBy('jenisbarang_id', 'DESC')->count();
         $data["satuan"] = SatuanModel::orderBy('satuan_id', 'DESC')->count();
         $data["merk"] = MerkModel::orderBy('merk_id', 'DESC')->count();

@@ -6,7 +6,7 @@
     <h1 class="page-title">{{$title}}</h1>
     <div>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item text-gray">Dados Mestres </li>
+            <li class="breadcrumb-item text-gray">Estoque</li>
             <li class="breadcrumb-item active" aria-current="page">{{$title}}</li>
         </ol>
     </div>
@@ -18,7 +18,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header justify-content-between">
-                <h3 class="card-title">Lista de produtos</h3>
+                <h3 class="card-title">Lista de item</h3>
                 @if($hakTambah > 0)
                 <div>
                     <a class="modal-effect btn btn-primary-light" onclick="generateID()" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">Adicionar <i class="fe fe-plus"></i></a>
@@ -74,7 +74,7 @@
     }
     function hapus(data) {
         $("input[name='idbarang']").val(data.barang_id);
-        $("#vbarang").html("produto " + "<b>" + data.barang_nama.replace(/_/g, ' ') + "</b>");
+        $("#vbarang").html("item " + "<b>" + data.barang_nama.replace(/_/g, ' ') + "</b>");
     }
     function gambar(data) {
         if(data.barang_gambar != 'image.png'){

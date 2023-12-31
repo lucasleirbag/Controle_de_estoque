@@ -19,8 +19,8 @@ class BarangController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Produto";
-        $data["hakTambah"] = AksesModel::leftJoin('tbl_submenu', 'tbl_submenu.submenu_id', '=', 'tbl_akses.submenu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_submenu.submenu_judul' => 'Produto', 'tbl_akses.akses_type' => 'create'))->count();
+        $data["title"] = "Item";
+        $data["hakTambah"] = AksesModel::leftJoin('tbl_submenu', 'tbl_submenu.submenu_id', '=', 'tbl_akses.submenu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_submenu.submenu_judul' => 'Item', 'tbl_akses.akses_type' => 'create'))->count();
         $data["jenisbarang"] =  JenisBarangModel::orderBy('jenisbarang_id', 'DESC')->get();
         $data["satuan"] =  SatuanModel::orderBy('satuan_id', 'DESC')->get();
         $data["merk"] =  MerkModel::orderBy('merk_id', 'DESC')->get();
@@ -112,8 +112,8 @@ class BarangController extends Controller
                         "barang_gambar" => $row->barang_gambar,
                     );
                     $button = '';
-                    $hakEdit = AksesModel::leftJoin('tbl_submenu', 'tbl_submenu.submenu_id', '=', 'tbl_akses.submenu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_submenu.submenu_judul' => 'Produto', 'tbl_akses.akses_type' => 'update'))->count();
-                    $hakDelete = AksesModel::leftJoin('tbl_submenu', 'tbl_submenu.submenu_id', '=', 'tbl_akses.submenu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_submenu.submenu_judul' => 'Produto', 'tbl_akses.akses_type' => 'delete'))->count();
+                    $hakEdit = AksesModel::leftJoin('tbl_submenu', 'tbl_submenu.submenu_id', '=', 'tbl_akses.submenu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_submenu.submenu_judul' => 'Item', 'tbl_akses.akses_type' => 'update'))->count();
+                    $hakDelete = AksesModel::leftJoin('tbl_submenu', 'tbl_submenu.submenu_id', '=', 'tbl_akses.submenu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_submenu.submenu_judul' => 'Item', 'tbl_akses.akses_type' => 'delete'))->count();
                     if ($hakEdit > 0 && $hakDelete > 0) {
                         $button .= '
                         <div class="g-2">
